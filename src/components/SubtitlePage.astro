@@ -1,0 +1,13 @@
+---
+export interface props{
+
+    subtitle:string;
+}
+
+const {subtitle} = Astro.props 
+---
+
+<div class="p-5">
+    <h2 class="lg:text-4xl md:text-3xl sm:text-2xl font-bold text-c-white" >{subtitle}</h2>
+    <!-- <p class="pt-2 text-c-white"> {subtitle} </p> -->
+</div>

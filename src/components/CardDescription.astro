@@ -1,0 +1,11 @@
+---
+export interface props{
+     description:string;
+}
+const {description} = Astro.props;
+---
+<div>
+    <article class="relative bg-white h-full rounded-md shadow-md px-10 py-12">
+        <p class="p-3">{description}</p>
+    </article>
+</div>

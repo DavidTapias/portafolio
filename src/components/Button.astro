@@ -1,0 +1,9 @@
+---
+export interface props{
+     text:string,
+     link:string
+}
+const {text,link} = Astro.props;
+---
+
+<a href={link} class="mt-4 px-6 py-2 max-w-48 bg-c-black text-sm font-bold text-c-dark-yellow z-20 ">{text}</a>

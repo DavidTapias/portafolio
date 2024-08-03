@@ -1,0 +1,18 @@
+---
+export interface props{
+
+    year:string;
+   
+
+}
+const {year} = Astro.props;
+---
+
+<div class=" bg-c-white rounded-md shadow-md">
+    <div class="p-6 ">
+        <h3 class="font-bold text-2xl text-c-dark-gray">Año</h3>
+        <div class="text-center">
+            <strong class=" text-6xl text-c-ligth-cyan"  >{year}</strong>
+        </div>
+    </div>
+</div>

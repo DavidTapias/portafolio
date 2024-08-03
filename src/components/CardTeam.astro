@@ -1,0 +1,25 @@
+---
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+export interface props{
+
+    team:Array<string>;
+
+}
+const {team} = Astro.props;
+---
+
+<div class=" relative bg-c-white rounded-md shadow-md">
+    <div class="p-6">
+        <h3 class="font-bold text-2xl text-c-dark-gray">
+            Equipo</h3>
+        <article class="p-2 text-c-black">
+            <ul class="list-disc list-inside">
+                {team.map((rol) => (
+                    <li>{rol}</li>
+                ))}
+            </ul>
+        </article>
+    </div>
+</div>
+<!-- <i class="fas fa-solid fa-people-group text-c-dark-yellow mx-2 my-2"></i> -->

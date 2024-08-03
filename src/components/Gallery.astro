@@ -1,0 +1,99 @@
+---
+export interface props {
+  images:Array<string>;
+}
+
+const {images} = Astro.props;
+---
+
+<!-- Contenedor principal de Swiper -->
+<div class="swiper">
+    <!-- Wrapper adicional requerido -->
+    <div class="swiper-wrapper">
+      <!-- Los slides -->
+
+      {images.map((img) => (
+      <div class="swiper-slide">
+          <img src={img} alt="" />
+      </div>
+         ))}
+      
+    </div>
+    <!-- Botones de navegación -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+
+  <script>
+    import Swiper from 'swiper';
+    import 'swiper/css';
+    import { Navigation } from "swiper/modules";
+    import "swiper/css/navigation";
+
+    document.addEventListener('astro:page-load', () => {
+      const initSwiper = new Swiper(".swiper", {
+        modules: [Navigation], // definir los módulos a usar
+        loop: false,            // definir si los slides estarán en bucle
+        slidesPerView: 1,      // agregar número de slides para la pantalla
+        spaceBetween: 0,      // separación entre slides en px
+        navigation: {          // definir botones next y prev para el módulo Navigation
+          prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          }
+        });
+    }, { once: false });
+
+  </script>
+
+<style>
+    .swiper-slide {
+        margin-top: 2rem;
+        height: auto; 
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: content;
+      
+
+    }
+
+    .swiper-button-prev {
+      background-color: #000;
+      color: rgb(244 175 45);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      
+    }
+
+.swiper-button-next {
+    background-color: #000;
+    color: rgb(244 175 45);
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after
+{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.swiper-button-prev:after{
+  margin-left: -2px;
+
+} 
+
+.swiper-button-next:after{
+  margin-left: 2px;
+
+}
+
+
+    
+  </style>

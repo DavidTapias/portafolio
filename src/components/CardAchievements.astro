@@ -1,0 +1,24 @@
+---
+export interface props{
+    list:Array<string>;
+
+}
+
+const {list} = Astro.props;
+---
+
+<div class="relative bg-c-white rounded-md shadow-md ">
+    <div class="p-6 ">
+        <h3 class="font-bold text-2xl text-c-dark-gray">Logros</h3>
+        <article class="p-2 text-c-black">
+            <p>
+                <ul class="list-disc list-inside">
+                    {list.map((done) => (
+                        <li>{done}</li>
+                    ))}
+                </ul>
+     
+            </p>
+        </article>
+    </div>
+</div>

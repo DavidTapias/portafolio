@@ -1,0 +1,35 @@
+---
+import Menu from "../../components/Menu.astro";
+import TitlePage from "../../components/TitlePage.astro";
+import Gallery from "../../components/Gallery.astro";
+---
+<Menu></Menu>
+<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-8">
+    <div class="max-w-7xl mx-auto">
+        <TitlePage title="Tienda para pyme" subtitle="Éstos son algunos proyectos en los que he trabajado"></TitlePage>
+        <Gallery images={["/images/proyectos/proyecto3/panel-de-administracion.png"]}></Gallery>
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            Requerimientos: 
+            Se solicita una tienda virtual para la venta de frutas y verduras para distribucir en Bogotá, método de pago contra entrega y generación de recibo para imprimir cada pedido.
+            Comprar dominio, y despliegue en hosting.
+
+            Solución:
+            Aprovechando las funcionalidades de WooCommerce, se toma como tecnología base, personalización con los respectivos colores, logo, e imágenes de la tienda, se agregan algunos fragmentos de código y configuración general de acuerdo a los requerimientos.
+            Para la generación de recibos para imprimir, se hace una personalización y algunas modificaciones a un plugin exisitente.
+            Se compra dominio y hosting con cPanel para despliegue del proyecto.
+
+
+            Tecnologías:
+            1. Wordpress
+            2. Woocomerce 
+            3. PHP 
+            4. HTML5 
+            5. CSS3
+
+            Equipo de trabajo:
+            Proyecto llevado a cabo de forma individual.
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,120 @@
+---
+import Menu from "../components/Menu.astro";
+import TitlePage from "../components/TitlePage.astro";
+import SubtitlePage from "../components/SubtitlePage.astro";
+import CardSkills from "../components/CardSkills.astro";
+
+
+
+const metronic = "/images/skills/technical/metronic.png";
+const jquery = "/images/skills/technical/jquery.png";
+const mysql = "/images/skills/technical/mysql.png";
+const woocommerce = "/images/skills/technical/woocommerce.png";
+const square = "/images/skills/technical/square.png";
+const php = "/images/skills/technical/php.png";
+const linux = "/images/skills/technical/linux.png";
+const debian = "/images/skills/technical/debian.png";
+const s3 = "/images/skills/technical/s3.png";
+const bootstrap = "/images/skills/technical/bootstrap.png";
+const html5 = "/images/skills/technical/html5.png";
+const css3 = "/images/skills/technical/css3.png";
+const javascript = "/images/skills/technical/javascript.png";
+const paypal = "/images/skills/technical/paypal.png";
+const wordpress = "/images/skills/technical/wordpress.png";
+const laravel = "/images/skills/technical/laravel.png";
+
+const github = "/images/skills/technical/github.png";
+const gitlab = "/images/skills/technical/gitlab.png";
+const materialize = "/images/skills/technical/materialize.png";
+const mariaDB = "/images/skills/technical/mariaDB.png";
+const polly = "/images/skills/technical/polly.png";
+const postman = "/images/skills/technical/postman.png";
+const trello = "/images/skills/technical/trello.png";
+const tailwind = "/images/skills/technical/tailwind.png";
+const slack = "/images/skills/technical/slack.png";
+const lumen = "/images/skills/technical/lumen.png";
+const sourcetree = "/images/skills/technical/sourceTree.png";
+const astro = "/images/skills/technical/astro.png";
+
+
+
+const visualstudiocode = "/images/techs/visualstudiocode.png";
+
+
+
+
+---
+
+<Menu />
+<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-8">
+    <div class="max-w-7xl mx-auto">
+        <TitlePage title="Habilidades"  />
+        <SubtitlePage subtitle="Transversales"></SubtitlePage>
+
+        <div class="mt-4 p-5 grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
+            <CardSkills typeSkill="transversal" title="Trabajo en equipo" img="../../public/images/skills/transversal/trabajo-en-equipo.png" ></CardSkills>
+            <CardSkills typeSkill="transversal" title="Comunicación asertiva" img="../../public/images/skills/transversal/comunicacion-asertiva.png"></CardSkills>
+            <CardSkills typeSkill="transversal" title="Planificación" img="../../public/images/skills/transversal/planificador.png"></CardSkills>
+        </div>
+
+        <SubtitlePage subtitle="Técnicas"></SubtitlePage>
+
+        <div class="mt-4 p-5 grid grid-cols-5 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-7  gap-2">
+            <CardSkills title="HTML5" img={html5}></CardSkills>
+            <CardSkills title="CSS3" img={css3}></CardSkills>
+            <CardSkills title="MySQL" img={mysql}></CardSkills>
+            <CardSkills title="JavaScript" img={javascript}></CardSkills>
+            <CardSkills title="PHP" img={php}></CardSkills>
+            <CardSkills title="jQuery" img={jquery}></CardSkills>
+            <CardSkills title="Metronic" img={metronic}></CardSkills>
+            <CardSkills title="Woocommerce" img={woocommerce}></CardSkills>
+            <CardSkills title="Linux" img={linux}></CardSkills>
+            <CardSkills title="Square" img={square}></CardSkills>
+            <CardSkills title="Debian 10" img={debian}></CardSkills>
+            <CardSkills title="Amazon S3" img={s3}></CardSkills>
+            <CardSkills title="Paypal" img={paypal}></CardSkills>
+            <CardSkills title="Wordpress" img={wordpress}></CardSkills>
+            <CardSkills title="Laravel" img={laravel}></CardSkills>
+            <CardSkills title="Bootstrap" img={bootstrap}></CardSkills>
+
+            <CardSkills title="Github" img={github}></CardSkills>
+            <CardSkills title="Gitlab" img={gitlab}></CardSkills>
+            <CardSkills title="Materialize" img={materialize}></CardSkills>
+            <CardSkills title="MariaDB" img={mariaDB}></CardSkills>
+            <CardSkills title="Amazon Polly" img={polly}></CardSkills>
+            <CardSkills title="Postman" img={postman}></CardSkills>
+            <CardSkills title="Trello" img={trello}></CardSkills>
+            <CardSkills title="Tailwind" img={tailwind}></CardSkills>
+            <CardSkills title="Slack" img={slack}></CardSkills>
+            <CardSkills title="Lumen" img={lumen}></CardSkills>
+            <CardSkills title="SourceTree" img={sourcetree}></CardSkills>
+            <CardSkills title="Astro js" img={astro}></CardSkills>
+
+
+
+         
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+    </div>
+</section>

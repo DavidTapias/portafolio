@@ -1,0 +1,22 @@
+---
+export interface props{
+    title:string;
+    img:string;
+    typeSkill:string;
+}
+
+const {title,img,typeSkill} = Astro.props;
+console.log(typeSkill);
+let transversal=(typeSkill === "transversal")?`<h3 class="py-4 font-bold lg:text-2xl sm:text-1xl text-c-black text-center" >${title}</h3>`:`<figcaption class="text-1xl text-c-black text-center">${title}</figcaption>`;
+
+
+---
+
+<div class="relative">
+    <div class="bg-c-white rounded-md shadow-md px-6 py-8">
+        <figure class="relative">
+            <img class="my-0 mx-auto" src={img} alt="">
+            <Fragment set:html={transversal}></Fragment>
+        </figure>
+    </div>
+</div>
