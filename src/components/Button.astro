@@ -1,9 +1,23 @@
 ---
 export interface props{
      text:string,
-     link:string
+     link:string,
+     ico:string,
+     target:string
 }
-const {text,link} = Astro.props;
+let {text,link, ico, target} = Astro.props;
+
+if(ico ==="download"){
+     ico = '<i class="fa-regular fa-circle-down text-lg mx-2"></i>';
+     target = "";
+
+}else if(ico === "external"){
+     ico = '<i class="fa-solid fa-up-right-from-square text-lg mx-2"></i>';
+     target = "_blank";
+}else {
+     ico = "";
+}
+
 ---
 
-<a href={link} class="mt-4 px-6 py-2 max-w-48 bg-c-black text-sm font-bold text-c-dark-yellow z-20 ">{text}</a>
+<a href={link} target = {target} class="inline-block text-center mt-4 px-4 py-2 w-max-[00px] bg-c-black text-md font-bold w-full text-c-dark-yellow  ">{text} <Fragment class="inline" set:html={ico}></Fragment></a>

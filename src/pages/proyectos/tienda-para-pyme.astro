@@ -1,35 +1,90 @@
 ---
 import Menu from "../../components/Menu.astro";
 import TitlePage from "../../components/TitlePage.astro";
-import Gallery from "../../components/Gallery.astro";
+import CardProblem from "../../components/CardProblem.astro";
+import CardSolution from "../../components/CardSolution.astro";
+
+import CardAchievements from "../../components/CardAchievements.astro";
+import CardTools from "../../components/CardTools.astro";
+import CardTeam from "../../components/CardTeam.astro";
+import CardCompanyLogo from "../../components/CardCompanyLogo.astro";
+import CardYear from "../../components/CardYear.astro";
+import Button from "../../components/Button.astro";
+import ButtonBack from "../../components/ButtonBack.astro";
+
+const logoCompany = "/images/companies/logoYomercobien.png";
+const jquery = "/images/skills/technical/jquery.png";
+const woocommerce = "/images/skills/technical/woocommerce.png";
+const php = "/images/skills/technical/php.png";
+const css3 = "/images/skills/technical/css3.png";
+const html5 = "/images/skills/technical/html5.png";
+const wordpress = "/images/skills/technical/wordpress.png";
+const cPanel = "/images/skills/technical/cPanel.png";
+const phpSpreadsheet = "/images/skills/technical/phpSpreadsheet.png";
+
 ---
 <Menu></Menu>
-<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-8">
+<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-4 ">
     <div class="max-w-7xl mx-auto">
-        <TitlePage title="Tienda para pyme" subtitle="Éstos son algunos proyectos en los que he trabajado"></TitlePage>
-        <Gallery images={["/images/proyectos/proyecto3/panel-de-administracion.png"]}></Gallery>
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10">
 
-            Requerimientos: 
-            Se solicita una tienda virtual para la venta de frutas y verduras para distribucir en Bogotá, método de pago contra entrega y generación de recibo para imprimir cada pedido.
-            Comprar dominio, y despliegue en hosting.
+        <TitlePage title="Tienda para pyme" subtitle=""></TitlePage>
+     
+        <Button text="Ver online" ico="external" target="external"  link="https://yomercobien.com" ></Button>
+        <div class="grid grid-cols-1 gap-2 sm:grid-cols-1 lg:grid-cols-1 mt-2">
 
-            Solución:
-            Aprovechando las funcionalidades de WooCommerce, se toma como tecnología base, personalización con los respectivos colores, logo, e imágenes de la tienda, se agregan algunos fragmentos de código y configuración general de acuerdo a los requerimientos.
-            Para la generación de recibos para imprimir, se hace una personalización y algunas modificaciones a un plugin exisitente.
-            Se compra dominio y hosting con cPanel para despliegue del proyecto.
-
-
-            Tecnologías:
-            1. Wordpress
-            2. Woocomerce 
-            3. PHP 
-            4. HTML5 
-            5. CSS3
-
-            Equipo de trabajo:
-            Proyecto llevado a cabo de forma individual.
-
+        <div class="grid gap-2  sm:grid-cols-1  lg:grid-cols-[20%_auto]">
+            <CardCompanyLogo  logo={logoCompany} companyName="Smart Automation Systems" ></CardCompanyLogo>
+            <CardProblem description=" Se solicita una tienda virtual para la venta de frutas y verduras para distribucir en Bogotá, método de pago contra entrega y generación de recibo para imprimir cada pedido. Comprar dominio, y despliegue en hosting."></CardProblem>
         </div>
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-2  ">
+           
+            <CardSolution  description= "Aprovechando las funcionalidades de WooCommerce, se toma como tecnología base, personalización con los respectivos colores, logo, e imágenes de la tienda, se agregan algunos fragmentos de código y configuración general de acuerdo a los requerimientos. Para la generación de recibos para imprimir, se hace una personalización y algunas modificaciones a un plugin exisitente. Se compra dominio y hosting con cPanel para despliegue del proyecto. "></CardSolution>
+
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-1  lg:grid-rows-1">
+            <CardAchievements list={["Se mejoró la experiencia de usuario para hacer pedidos.", "Se automatizó la creación de listados de compras."]} ></CardAchievements>
+
+            <div class="grid grid-cols-1  gap-2 lg:grid-cols-2  lg:grid-rows-1">
+                <CardTeam  team={["Proyecto llevado a cabo de forma individual."]}></CardTeam>
+               <CardYear year="2020"></CardYear>
+
+            </div>
+        </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-1">
+                <CardTools tools={[
+                    {
+                        "name":"Wordpress", "image":wordpress
+                    },
+                    {
+                        "name":"Woocommerce", "image":woocommerce
+                    },
+                    {
+                        "name":"HTML5", "image":html5
+                    },
+                    {
+                        "name":"CSS3", "image":css3
+                    },
+                    {
+                        "name":"jQuery", "image":jquery
+                    },
+                    {
+                        "name":"PHP", "image":php
+                    },
+                    
+                    {
+                        "name":"phpSpreadSheet", "image":phpSpreadsheet
+                    },
+                    {
+                        "name":"cPanel", "image":cPanel
+                    }
+                    
+                ]}>
+                </CardTools>
+           </div>
+            </div>
     </div>
 </section>
+
+<ButtonBack link="/proyectos/"></ButtonBack>

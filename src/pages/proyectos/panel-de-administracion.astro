@@ -10,6 +10,8 @@ import CardTools from "../../components/CardTools.astro";
 import CardTeam from "../../components/CardTeam.astro";
 import CardCompanyLogo from "../../components/CardCompanyLogo.astro";
 import CardYear from "../../components/CardYear.astro";
+import ButtonBack from "../../components/ButtonBack.astro";
+
 const logoCompany = "/images/companies/logoSmartAutomationSystems.png";
 
 const metronic = "/images/skills/technical/metronic.png";
@@ -23,6 +25,7 @@ const debian = "/images/skills/technical/debian.png";
 const baseGallery = "/images/projects/panel-de-administracion/";
 
 const imgGallery = [
+    baseGallery+"panel-de-administracion-login.png",
     baseGallery+"panel-de-administracion.png", 
     baseGallery+"panel-de-administracion-productos-clientes.png",
     baseGallery+"panel-de-administracion-proceso-ordenes-fallido.png",
@@ -37,7 +40,7 @@ const imgGallery = [
     <div class="max-w-7xl mx-auto">
 
         <TitlePage title="Panel de administración" subtitle="Éstos son algunos proyectos en los que he trabajado"></TitlePage>
-        <Gallery images={imgGallery}>
+        <Gallery class="z-2 relative" images={imgGallery}>
         </Gallery>
         <!-- <ButtonProject text="Ver online" link="" ></ButtonProject> -->
         <div class="grid grid-cols-1 gap-2 sm:grid-cols-1 lg:grid-cols-1 mt-2">
@@ -95,3 +98,5 @@ const imgGallery = [
             </div>
     </div>
 </section>
+
+<ButtonBack link="/proyectos/"></ButtonBack>

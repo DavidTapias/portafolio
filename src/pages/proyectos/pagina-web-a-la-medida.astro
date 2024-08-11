@@ -1,36 +1,79 @@
 ---
 import Menu from "../../components/Menu.astro";
 import TitlePage from "../../components/TitlePage.astro";
+import CardProblem from "../../components/CardProblem.astro";
+import CardSolution from "../../components/CardSolution.astro";
+
+import CardAchievements from "../../components/CardAchievements.astro";
+import CardTools from "../../components/CardTools.astro";
+import CardTeam from "../../components/CardTeam.astro";
+import CardCompanyLogo from "../../components/CardCompanyLogo.astro";
+import CardYear from "../../components/CardYear.astro";
+import Button from "../../components/Button.astro";
+import ButtonBack from "../../components/ButtonBack.astro";
+
+const logoCompany = "/images/companies/logoLaPeceraCreativa.png";
+const jquery = "/images/skills/technical/jquery.png";
+const php = "/images/skills/technical/php.png";
+const css3 = "/images/skills/technical/css3.png";
+const html5 = "/images/skills/technical/html5.png";
+const javascript = "/images/skills/technical/javascript.png";
+
 
 ---
 <Menu></Menu>
-<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-8">
+<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-4 ">
     <div class="max-w-7xl mx-auto">
-        <TitlePage title="Página web a la medida" subtitle="Éstos son algunos proyectos en los que he trabajado"></TitlePage>
-        
 
+        <TitlePage title="Tienda para pyme" subtitle="Éstos son algunos proyectos en los que he trabajado"></TitlePage>
+     
+        <Button text="Ver online" ico="external" target="external"  link="https://davidtapias.com/proyectos/pinilla/" ></Button>
+        <div class="grid grid-cols-1 gap-2 sm:grid-cols-1 lg:grid-cols-1 mt-2">
 
-        Requerimientos: 
-            Un locutor requiere una página web para mostrar su trabajo, darse a conocer en internet y obtener clientes potenciales, el cliente (agencia de publicidad) ya tiene el diseño y material para la creación de la web.
-            Se solicita diseñar reproductores de audio y video a la medida.
+        <div class="grid gap-2  sm:grid-cols-1  lg:grid-cols-[20%_auto]">
+            <CardCompanyLogo  logo={logoCompany} companyName="Smart Automation Systems" ></CardCompanyLogo>
+            <CardProblem description="Un locutor requiere una página web para mostrar su trabajo, darse a conocer en internet y obtener clientes potenciales, el cliente (agencia de publicidad) ya tiene el diseño y material para la creación de la web.Se solicita diseñar reproductores de audio y video a la medida."></CardProblem>
+        </div>
 
-            Solución:
-            Siguiendo el diseño planteado y al ser una web más informativa, se decide trabajar con los lenguajes puros, una librería para animar y las funcionalidades de la API de audio de HTML5. 
-
-
-            Herramientas:
-            1. HTML5
-            2. CSS3
-            3. JavaScript
-            4. JQuery
-            5. PHP 
-            6. Youtube
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-2  ">
            
-            Equipo de trabajo:
-            * Diseñador gráfico.
+            <CardSolution  description= "Siguiendo el diseño planteado y al ser una web más informativa, se decide trabajar con los lenguajes puros, una librería para animar y las funcionalidades de la API de audio de HTML5."></CardSolution>
 
-            Nicho de mercado.
-            * Agencia de publicidad.
-        
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-1  lg:grid-rows-1">
+            <CardAchievements list={["Se mejoró el monitoreo del funcionamiento de las plataformas." ]} ></CardAchievements>
+
+            <div class="grid grid-cols-1  gap-2 lg:grid-cols-2  lg:grid-rows-1">
+                <CardTeam  team={["Diseñador gráfico."]}></CardTeam>
+               <CardYear year="2015"></CardYear>
+
+            </div>
+        </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-1">
+                <CardTools tools={[
+                   
+                    {
+                        "name":"HTML5", "image":html5
+                    },
+                    {
+                        "name":"CSS3", "image":css3
+                    },
+                    
+                    {
+                        "name":"javaScript", "image":javascript
+                    },
+                    {
+                        "name":"jQuery", "image":jquery
+                    },
+                    {
+                        "name":"PHP", "image":php
+                    }
+                ]}>
+                </CardTools>
+           </div>
+            </div>
     </div>
 </section>
+
+<ButtonBack link="/proyectos/"></ButtonBack>

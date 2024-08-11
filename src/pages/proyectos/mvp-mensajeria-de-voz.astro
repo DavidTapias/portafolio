@@ -1,40 +1,136 @@
 ---
 import Menu from "../../components/Menu.astro";
 import TitlePage from "../../components/TitlePage.astro";
+import Gallery from "../../components/Gallery.astro";
+import CardProblem from "../../components/CardProblem.astro";
+import CardSolution from "../../components/CardSolution.astro";
+
+import CardAchievements from "../../components/CardAchievements.astro";
+import CardTools from "../../components/CardTools.astro";
+import CardTeam from "../../components/CardTeam.astro";
+import CardCompanyLogo from "../../components/CardCompanyLogo.astro";
+import CardYear from "../../components/CardYear.astro";
+import ButtonBack from "../../components/ButtonBack.astro";
+
+const logoCompany = "/images/companies/logoSmartAutomationSystems.png";
+
+const metronic = "/images/skills/technical/metronic.png";
+const jquery = "/images/skills/technical/jquery.png";
+const mysql = "/images/skills/technical/mysql.png";
+const php = "/images/skills/technical/php.png";
+const linux = "/images/skills/technical/linux.png";
+const debian = "/images/skills/technical/debian.png";
+const s3 = "/images/skills/technical/s3.png";
+const css3 = "/images/skills/technical/css3.png";
+const javascript = "/images/skills/technical/javascript.png";
+const paypal = "/images/skills/technical/paypal.png";
+const gitlab = "/images/skills/technical/gitlab.png";
+const polly = "/images/skills/technical/polly.png";
+const postman = "/images/skills/technical/postman.png";
+const lumen = "/images/skills/technical/lumen.png";
+const swagger = "/images/skills/technical/swagger.png";
+
+
+
+
+const baseGallery = "/images/projects/mvp-mensajeria-de-voz/";
+
+const imgGallery = [
+    baseGallery+"mvp-mensajeria-de-voz.png",
+    baseGallery+"mvp-mensajeria-de-voz-tts.png", 
+    baseGallery+"mvp-mensajeria-de-voz-difusiones-pendientes.png",
+    baseGallery+"mvp-mensajeria-de-voz-historial-difusiones.png",
+    baseGallery+"mvp-mensajeria-de-voz-creditos.png",
+    baseGallery+"mvp-mensajeria-de-voz-creditos-csv-contactos.png",
+    baseGallery+"mvp-mensajeria-de-voz--recuperacion-de-contrasenas.png",
+];
 
 ---
 <Menu></Menu>
-<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-8">
+<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-4 ">
     <div class="max-w-7xl mx-auto">
-        <TitlePage title="MVP mensajería de voz" subtitle="Éstos son algunos proyectos en los que he trabajado"></TitlePage>
-        
 
-        Requerimientos: 
-            Se requiere una aplicación piloto para hacer mensajería de voz grupal, desde la aplicación se debe poder grabar audios, cargar archivos de audio ó generar Text to Speech. Agregación de números telefónicos manualmente o por .csv, envío del mensaje máximo a 50 números telefónicos. 
-            Cargo de créditos con paypal.
+        <TitlePage title="MVP mensajería de voz" subtitle=""></TitlePage>
+        <Gallery class="z-2 relative" images={imgGallery}>
+        </Gallery>
+        <!-- <ButtonProject text="Ver online" link="" ></ButtonProject> -->
+        <div class="grid grid-cols-1 gap-2 sm:grid-cols-1 lg:grid-cols-1 mt-2">
 
-        Solución:
-            Al ya conocer la librería metronic se decide usar en la parte del front-end. Para dar más posibilidades a futuro (si se decide usar como aplicación móvil nativa, si se quiere integrar una de las funcionalidades a las plataformas existentes), se realiza una API basada en lumen 8 , para el TTS se hace uso de AWS Polly, adminisración de archivos de audio con AWS S3, y una librería JavaScript existente para la grabación de voz.
-            
-            
-        Herramientas:
-            1. Metronic (Bootstrap)
-            2. CSS3
-            3. JavaScript
-            4. JQuery
-            5. Lumen 8
-            6. PHP 
-            7. Swagger
-            8. Postman
-            9. AWS Polly
-            10. AWS S3
-            11. Linux
-            12. Botón de pago Paypal
+        <div class="grid gap-2  sm:grid-cols-1  lg:grid-cols-[20%_auto]">
+            <CardCompanyLogo  logo={logoCompany} companyName="Smart Automation Systems" ></CardCompanyLogo>
+            <CardProblem description="Se requiere una aplicación producto mínimo viable, para hacer mensajería de voz grupal, una versión Lite de las plataformas de mensajería de la empresa y con un enfoque más para el usuario común, desde la aplicación se debe poder grabar audios, cargar archivos de audio ó generar Text to Speech. Agregación de números telefónicos manualmente o por .csv, envío del mensaje máximo a 50 números telefónicos. Cargo de créditos con paypal."></CardProblem>
+        </div>
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-2  ">
            
-        Equipo de trabajo:
-            * Gestor de proyectos.
-            * Desarrollador de software.
-            * Diseñador gráfico.
+            <CardSolution  description= "Al ya conocer la librería metronic se decide usar en la parte del front-end. Para dar más posibilidades a futuro (si se decide usar como aplicación móvil nativa, si se quiere integrar una de las funcionalidades a las plataformas existentes), se realiza una API basada en lumen 8 , para el TTS se hace uso de AWS Polly, adminisración de archivos de audio con AWS S3, y una librería JavaScript existente para la grabación de voz. "></CardSolution>
 
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-1  lg:grid-rows-1">
+            <CardAchievements list={["Se completó todo el ciclo del funcionamiento de la aplicación para ponerla a prueba en un entorno real." ]} ></CardAchievements>
+
+            <div class="grid grid-cols-1  gap-2 lg:grid-cols-2  lg:grid-rows-1">
+                <CardTeam  team={["Gestor de proyectos.", "Desarrolladores de software.", "Diseñador gráfico."]}></CardTeam>
+               <CardYear year="2023"></CardYear>
+
+            </div>
+        </div>
+        
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-1">
+                <CardTools tools={[
+                    {
+                        "name":"Debian 10", "image":debian
+                    },
+                    {
+                        "name":"Linux", "image":linux
+                    },
+                    {
+                        "name":"Metronic", "image":metronic
+                    },
+                    {
+                        "name":"CSS3", "image":css3
+                    },
+                    {
+                        "name":"javaScript", "image":javascript
+                    },
+                    {
+                        "name":"jQuery", "image":jquery
+                    },
+                    {
+                        "name":"PHP", "image":php
+                    }, 
+                    {
+                        "name":"Lumen 8", "image":lumen
+                    },
+                    {
+                        "name":"MySQL", "image":mysql
+                    },
+                    {
+                        "name":"AWS S3", "image":s3
+                    },
+                    {
+                        "name":"AWS Polly", "image":polly
+                    },
+                    {
+                        "name":"Paypal", "image":paypal
+                    },
+                    {
+                        "name":"Postman", "image":postman
+                    },
+                    {
+                        "name":"Swagger", "image":swagger
+                    },
+                    
+                    {
+                        "name":"GitLab", "image":gitlab
+                    } 
+                ]}>
+
+                </CardTools>
+           </div>
+            </div>
     </div>
 </section>
+
+<ButtonBack link="/proyectos/"></ButtonBack>
