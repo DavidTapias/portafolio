@@ -3,6 +3,7 @@ import Menu from "../components/Menu.astro";
 import TitlePage from "../components/TitlePage.astro";
 import SubtitlePage from "../components/SubtitlePage.astro";
 import CardSkills from "../components/CardSkills.astro";
+import GeneralHeader from "../components/GeneralHeader.astro";
 
 
 
@@ -48,10 +49,12 @@ const swagger = "/images/skills/technical/swagger.png";
 const visualstudiocode = "/images/techs/visualstudiocode.png";
 
 
-
-
 ---
+<head>
+	<GeneralHeader></GeneralHeader>
+    <title>David Tapias - Habilidades</title>
 
+</head>
 <Menu />
 <section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-8">
     <div class="max-w-7xl mx-auto">
@@ -97,10 +100,10 @@ const visualstudiocode = "/images/techs/visualstudiocode.png";
             <CardSkills title="Lumen" img={lumen}></CardSkills>
             <CardSkills title="SourceTree" img={sourcetree}></CardSkills>
             <CardSkills title="cPanel" img={cPanel}></CardSkills>
-            <CardSkills title="grafana" img={grafana}></CardSkills>
-            <CardSkills title="ibmWatson" img={ibmWatson}></CardSkills>
-            <CardSkills title="phpSpreadsheet" img={phpSpreadsheet}></CardSkills>
-            <CardSkills title="swagger" img={swagger}></CardSkills>
+            <CardSkills title="Grafana" img={grafana}></CardSkills>
+            <CardSkills title="IBM Watson" img={ibmWatson}></CardSkills>
+            <CardSkills title="PHP Spreadsheet" img={phpSpreadsheet}></CardSkills>
+            <CardSkills title="Swagger" img={swagger}></CardSkills>
         </div>
         
     </div>

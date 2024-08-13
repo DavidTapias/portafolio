@@ -11,6 +11,7 @@ import CardCompanyLogo from "../../components/CardCompanyLogo.astro";
 import CardYear from "../../components/CardYear.astro";
 import Button from "../../components/Button.astro";
 import ButtonBack from "../../components/ButtonBack.astro";
+import GeneralHeader from "../../components/GeneralHeader.astro";
 
 const logoCompany = "/images/companies/logoLaPeceraCreativa.png";
 const jquery = "/images/skills/technical/jquery.png";
@@ -21,11 +22,15 @@ const javascript = "/images/skills/technical/javascript.png";
 
 
 ---
+<head>
+	<GeneralHeader></GeneralHeader>
+    <title>David Tapias - Proyectos - página web a la medida</title>
+</head>
 <Menu></Menu>
 <section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-4 ">
     <div class="max-w-7xl mx-auto">
 
-        <TitlePage title="Tienda para pyme" subtitle="Éstos son algunos proyectos en los que he trabajado"></TitlePage>
+        <TitlePage title="Página web a la medida" subtitle=""></TitlePage>
      
         <Button text="Ver online" ico="external" target="external"  link="https://davidtapias.com/proyectos/pinilla/" ></Button>
         <div class="grid grid-cols-1 gap-2 sm:grid-cols-1 lg:grid-cols-1 mt-2">

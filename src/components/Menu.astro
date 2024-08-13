@@ -1,19 +1,7 @@
 ---
 const menu = "fixed bg-c-black  z-20 bottom-0 right-0 left-0  space-x-6 lg:space-x-20  text-center font-bold uppercase tracking-wide text-c-dark-yellow py-4 ";
-
-const menuMobile = "fixed bg-c-black  z-20 bottom-0 right-0 left-0  space-x-20  text-center font-bold uppercase tracking-wide text-c-dark-yellow py-4 ";
-
-import { ViewTransitions } from 'astro:transitions';
 import '@fortawesome/fontawesome-free/css/all.css';
-
 ---
-<head>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <meta charset="UTF-8">
-    <ViewTransitions />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-</head>
 <div class={menu}>
     <a href="/" class="hover:text-c-white ">
         <i class="fa-solid fa-user text-xl mx-2"></i><span class="md:inline hidden">sobre mi</span></a>
@@ -26,11 +14,3 @@ import '@fortawesome/fontawesome-free/css/all.css';
     <a href="https://wa.me/+573178870859" target="_blank" class="hover:text-c-white ">
         <i class="fa-brands fa-whatsapp text-2xl mx-2"></i><span class="md:inline hidden">contacto</span></a>
 </div>
-
-<!-- 
-<div class={menuMobile}>
-    <a href="/" class="hover:text-c-white "><i class="fa-solid fa-user"></i></a>
-    <a href="/proyectos/" class="hover:text-c-white "><i class="fa-sharp fa-solid fa-rectangle-vertical-history"></i></a>
-    <a href="/habilidades/" class="hover:text-c-white "><i class="fa-solid fa-brain"></i></a>
-    <a href="https://wa.me/+573178870859" target="_blank" class="hover:text-c-white "><i class="fa-brands fa-whatsapp"></i></a>
-</div> -->

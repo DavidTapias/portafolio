@@ -1,0 +1,29 @@
+---
+import Menu from "../components/Menu.astro";
+import TitlePage from "../components/TitlePage.astro";
+import CardCompany from "../components/CardCompany.astro";
+import GeneralHeader from "../components/GeneralHeader.astro";
+
+---
+
+<head>
+	<GeneralHeader></GeneralHeader>
+    <title>David Tapias - Experiencia</title>
+</head>
+<Menu />
+<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-0 sm:px-8 ">
+    <div class="max-w-3xl mx-auto">
+        <TitlePage title="Experiencia"  />
+        
+        <div class="mt-4 p-5 grid grid-cols-1 gap-4">
+            <CardCompany dates="2019/05/28 - 2024/03/22" jobPosition="Desarrollador de software." companyIndustry="Automatización, callcenters." img="../../public/images/companies/logoSmartAutomationSystems.png" ></CardCompany>
+            <CardCompany dates="2018/01/02 - 2019/03/29" jobPosition="Ingeniero de investigación y desarrollo." companyIndustry="Logística de transporte, inteligencia artificial." img="../../public/images/companies/logoWavecomm.png"></CardCompany>
+            <CardCompany dates="2017/07/01 - 2017/10/31" jobPosition="Desarrollador web y móvil." companyIndustry="Servicio de aseo doméstico." img="../../public/images/companies/logoFazill.png"></CardCompany>
+            <CardCompany dates="2015/03/16 - 2017/06/30" jobPosition="Integrador web." companyIndustry="Educación." img="../../public/images/companies/logoEstratco.png"></CardCompany>
+            <CardCompany dates="2014 - Actualidad." jobPosition="Desarrollador web. (Freelance)" companyIndustry="Turismo, agencia de publicidad, alimentos, servicios de transporte, etc." img="../../public/images/companies/logoFreelance.png"></CardCompany>
+            <CardCompany dates="2014/06/01 - 2014/12/30" jobPosition="Desarrollador web junior. (Práctica empresarial)" companyIndustry="Agencia de publicidad." img="../../public/images/companies/logoImpulse.png"></CardCompany>
+        </div>
+
+        
+    </div>
+</section>

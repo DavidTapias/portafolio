@@ -11,6 +11,7 @@ import CardTeam from "../../components/CardTeam.astro";
 import CardCompanyLogo from "../../components/CardCompanyLogo.astro";
 import CardYear from "../../components/CardYear.astro";
 import ButtonBack from "../../components/ButtonBack.astro";
+import GeneralHeader from "../../components/GeneralHeader.astro";
 
 const logoCompany = "/images/companies/logoSmartAutomationSystems.png";
 
@@ -35,11 +36,15 @@ const imgGallery = [
 ];
 
 ---
+<head>
+	<GeneralHeader></GeneralHeader>
+    <title>David Tapias - Proyectos - panel de administración</title>
+</head>
 <Menu></Menu>
 <section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-4 ">
     <div class="max-w-7xl mx-auto">
 
-        <TitlePage title="Panel de administración" subtitle="Éstos son algunos proyectos en los que he trabajado"></TitlePage>
+        <TitlePage title="Panel de administración" subtitle=""></TitlePage>
         <Gallery class="z-2 relative" images={imgGallery}>
         </Gallery>
         <!-- <ButtonProject text="Ver online" link="" ></ButtonProject> -->

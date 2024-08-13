@@ -1,0 +1,27 @@
+---
+export interface props{
+    logo:string;
+    dates:string;
+    jobPosition:string;
+    companyIndustry:string;
+}
+
+const {dates,img,jobPosition,companyIndustry} = Astro.props;
+
+
+---
+
+<div class="relative">
+    <div class="grid grid-cols-1 sm:grid-cols-2 bg-c-white rounded-md shadow-md px-6 py-8 items-center ">
+        <figure class="relative">
+            <img class="my-0 mx-auto" src={img} alt="">
+        </figure>
+        <article class=" sm:mt-0 text-left mt-2 " >
+            <p>
+                <span class="block text-1xl"><span class="font-bold text-c-dark-gray">Desde - Hasta:</span> {dates}</span>
+                <span class="block text-1xl"><span class="font-bold text-c-dark-gray">Cargo:</span> {jobPosition}</span>
+                <span class="block text-1xl"><span class="font-bold text-c-dark-gray">Industria:</span> {companyIndustry}</span>
+            </p>
+        </article>
+    </div>
+</div>

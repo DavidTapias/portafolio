@@ -1,69 +1,40 @@
 ---
-// import Button from "../components/Button.astro"
-// import CardService from "../components/CardService.astro"
-// import CardWorks from "../components/CardWorks.astro"
-// import TitlePage from "../components/TitlePage.astro"
-
 import Menu from "../components/Menu.astro"
 import Button from "../components/Button.astro";
-
+import GeneralHeader from "../components/GeneralHeader.astro";
 const Card = "div";
 const Content = "div"
----
 
-<html lang="en">
+
+---
+<html lang="es">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
+		<GeneralHeader></GeneralHeader>
 		<title>David Tapias</title>
 	</head>
 	<body>
-		<!-- <h1>Astro</h1>
-		<Button title="boton">Boton</Button>
-		<CardService title="titulo" desc="desc" />
-		<CardWorks title="titulo" img="images/work1.jpg" desc="desc" />
-		<TitlePage title="titulo" subtitle="subtitile" /> -->
-		<Menu />
-
+		<Menu></Menu>
 		<div class="absolute w-full min-h-screen">
 			<div class="absolute z-0 top-0 w-full h-1/2 bg-cover bg-bottom pt-20 px-12 bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan"></div>
 		</div>
 	<Card class="relative z-10 flex min-h-screen h-auto justify-center items-center mb-auto">
 		<Content class="relative z-20 bg-c-white lg:flex sm:p-12 p-6 shadow-lg rounded-lg w-full max-w-4xl sm:w-4xl mx-4 ">
 			<div class="sm:flex flex-col py-1 md:pr-10 ">
-				<!-- <h2 class="text-lg mb-3">Hola, soy</h2> -->
 				<h1 class="sm:text-5xl text-3xl  font-bold text-c-dark-gray sm:mb-6 mb-2 ">David Tapias</h1>
 				<p class="sm:text-xl">
 					Ingeniero de sistemas de la Universidad Piloto de Colombia,  con énfasis en desarrollo web full-stack, <strong class="text-c-dark-gray">8 años de experiencia</strong> construyendo soluciones web para empresas de diferentes mercados. <br>Apasionado por  la tecnología, los viajes, la naturaleza y el origami.
 				</p>
+				<div class="text-1xl py-1 my-2">
+					<span><i class="fa-solid fa-location-pin text-c-ligth-cyan "></i> Bogotá - Colombia</span>
+				</div>
 				<div class="md:grid flex-col md:gap-4 gap-2 grid-cols-1 md:grid-cols-4  sm:grid-cols-1">
-					<div class=""><Button text="Descargar CV" link="" ico="download" ></Button></div>
+					<div class=""><Button text="Ver CV"  link="../docs/Hoja_de_vida_2024.pdf" ico="external" ></Button></div>
 					<div class=""><Button text="Ver linkedin" link="" ico="external" link="https://www.linkedin.com/in/davidtapias0110"  ></Button></div>
 					<div class="col-start-4 md:col-star-3  md:text-right text-left" ><Button text="Ver origami" link="https://origami.davidtapias.com" ico="external" ></Button>
 					</div>
 				</div>
 			</div>
 			<img src="../images/about/perfil.png" alt="image" class=" rounded-full border-6 border-white shadow-md w-20 sm:w-40 absolute top-0 right-[5%] mt-[-40px] sm:mt-[-80px]">
-			<!-- position: absolute;
-    top: 0;
-    left: 50%;
-    margin-top: -80px;
-    margin-left: -80px;
-
-
-
-
-	position: absolute;
-    top: 0;
-    margin-top: -80px;
-    /* margin-left: -80px; */
-    right: 5%; -->
-
-
-
-
 		</Content>
 	</Card>
 	</body>

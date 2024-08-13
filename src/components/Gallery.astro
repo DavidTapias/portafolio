@@ -1,9 +1,9 @@
 ---
 export interface props {
-  images:Array<string>;
+  images:Array<string>,
+  mobile:boolean
 }
-
-const {images} = Astro.props;
+const {images, mobile} = Astro.props;
 ---
 
 <!-- Contenedor principal de Swiper -->
@@ -36,7 +36,7 @@ const {images} = Astro.props;
         modules: [Navigation], // definir los módulos a usar
         loop: false,            // definir si los slides estarán en bucle
         slidesPerView: 1,      // agregar número de slides para la pantalla
-        spaceBetween: 0,      // separación entre slides en px
+        spaceBetween: 8,      // separación entre slides en px
         navigation: {          // definir botones next y prev para el módulo Navigation
           prevEl: ".swiper-button-prev",
           nextEl: ".swiper-button-next",
