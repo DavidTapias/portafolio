@@ -19,6 +19,8 @@ const php = "/images/skills/technical/php.png";
 const css3 = "/images/skills/technical/css3.png";
 const html5 = "/images/skills/technical/html5.png";
 const javascript = "/images/skills/technical/javascript.png";
+const cPanel = "/images/skills/technical/cPanel.png";
+
 
 
 ---
@@ -36,20 +38,20 @@ const javascript = "/images/skills/technical/javascript.png";
         <div class="grid grid-cols-1 gap-2 sm:grid-cols-1 lg:grid-cols-1 mt-2">
 
         <div class="grid gap-2  sm:grid-cols-1  lg:grid-cols-[20%_auto]">
-            <CardCompanyLogo  logo={logoCompany} companyName="Smart Automation Systems" ></CardCompanyLogo>
-            <CardProblem description="Un locutor requiere una página web para mostrar su trabajo, darse a conocer en internet y obtener clientes potenciales, el cliente (agencia de publicidad) ya tiene el diseño y material para la creación de la web.Se solicita diseñar reproductores de audio y video a la medida."></CardProblem>
+            <CardCompanyLogo  logo={logoCompany} companyName="La pecera creativa" ></CardCompanyLogo>
+            <CardProblem description="Una agencia de publicidad requiere el desarrollo de una página web para un locutor para mostrar su trabajo, darse a conocer en internet y obtener clientes potenciales, la agencia hace entrega de diseño gráfico y material general para la construcción de la web. Algunos de sus requerimientos son, reproductores de audio y video a la medida, un fomrulario de contacto para clientes potenciales y ajuste a pantallas de diferentes resoluciones."></CardProblem>
         </div>
 
         <div class="grid grid-cols-1 gap-2  lg:grid-cols-2  ">
            
-            <CardSolution  description= "Siguiendo el diseño planteado y al ser una web más informativa, se decide trabajar con los lenguajes puros, una librería para animar y las funcionalidades de la API de audio de HTML5."></CardSolution>
+            <CardSolution  description= "Siguiendo el diseño planteado y al ser una web que no requiere mucha lógica del lado back-end, se decide trabajar con los lenguajes puros, una librería para animar, integración de videos de Youtube y funcionalidades de la API de audio de HTML5, la información  que llena un cliente potencial en el formulario se remite como un correo electrónico."></CardSolution>
 
 
         <div class="grid grid-cols-1 gap-2  lg:grid-cols-1  lg:grid-rows-1">
-            <CardAchievements list={["Se mejoró el monitoreo del funcionamiento de las plataformas." ]} ></CardAchievements>
+            <CardAchievements list={["Se le dió visibilidad en internet al trabajo del locutor, con un diseño original.", "Se mejoró la experiencia de usuario para los visitantes desde dispositivos móviles."]} ></CardAchievements>
 
             <div class="grid grid-cols-1  gap-2 lg:grid-cols-2  lg:grid-rows-1">
-                <CardTeam  team={["Diseñador gráfico."]}></CardTeam>
+                <CardTeam  team={["Gestora de proyectos.", "Diseñador gráfico."]}></CardTeam>
                <CardYear year="2015"></CardYear>
 
             </div>
@@ -73,6 +75,9 @@ const javascript = "/images/skills/technical/javascript.png";
                     },
                     {
                         "name":"PHP", "image":php
+                    },
+                    {
+                        "name":"cPanel", "image":cPanel
                     }
                 ]}>
                 </CardTools>
