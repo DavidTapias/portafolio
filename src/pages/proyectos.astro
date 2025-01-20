@@ -3,6 +3,7 @@ import Menu from "../components/Menu.astro";
 import TitlePage from "../components/TitlePage.astro";
 import CardWorks from "../components/CardWorks.astro";
 import GeneralHeader from "../components/GeneralHeader.astro";
+import Button from "../components/Button.astro";
 
 let linkDefault = "../images/projects/panel-de-administracion/panel-de-administracion-login.png";
 
@@ -18,17 +19,26 @@ let linkDefault = "../images/projects/panel-de-administracion/panel-de-administr
     <div class="max-w-7xl mx-auto">
         <TitlePage title="Proyectos" subtitle=""></TitlePage>
         <!-- Éstos son algunos proyectos con diferentes enfoques en los que he trabajado. -->
+         <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4  gap-4">
+            <div></div>
+        <div></div>
+
+    </div>
+
+
         <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  gap-4">
-            <CardWorks title="Automatización de SMS" image="../images/projects/automatizacion-de-sms.png" desc="Automatización en la gestión de SMS a través de la creación de un pseudolenguaje basado en llaves, operadores lógicos y diccionarios." link="automatizacion-de-sms">
-            </CardWorks>
             <CardWorks id="ppad" title="Panel de administración" image={linkDefault} desc="Integración de todas las plataformas de la empresa a través de API's, para hacer seguimiento de pagos y gestión técnica." link="panel-de-administracion">
             </CardWorks>
             <CardWorks title="MVP mensajería de voz" image="../images/projects/mvp-mensajeria-de-voz.png" desc="Aplicación piloto para hacer envío grupal de mensajes de voz." link="mvp-mensajeria-de-voz">
             </CardWorks>
-         
-
             <CardWorks title="Tienda para pyme" image="../images/projects/tienda-para-pyme.png" desc="Despliegue y personalización de tienda para distribuidora de frutas y verduras." link="tienda-para-pyme">
             </CardWorks>
+            
+            <CardWorks title="Automatización de SMS" image="../images/projects/automatizacion-de-sms.png" desc="Automatización en la gestión de SMS a través de la creación de un pseudolenguaje basado en llaves, operadores lógicos y diccionarios." link="automatizacion-de-sms">
+            </CardWorks>
+         
+
+            
             <CardWorks title="Objetos virtuales de aprendizaje" image="../images/projects/ovas.png" desc="Desarrollo de más de 20 OVAs (Objetos Virtuales de Aprendizaje) para reutilizarlos e integrarlos a diferentes cursos virtuales." link="ovas">
             </CardWorks> 
             

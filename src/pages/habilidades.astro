@@ -4,7 +4,7 @@ import TitlePage from "../components/TitlePage.astro";
 import SubtitlePage from "../components/SubtitlePage.astro";
 import CardSkills from "../components/CardSkills.astro";
 import GeneralHeader from "../components/GeneralHeader.astro";
-
+import SubtitlePageLevel3 from "../components/SubtitlePageLevel3.astro";
 
 
 const metronic = "/images/skills/technical/metronic.png";
@@ -43,7 +43,24 @@ const ibmWatson = "/images/skills/technical/ibmWatson.png";
 const phpSpreadsheet = "/images/skills/technical/phpSpreadsheet.png";
 const swagger = "/images/skills/technical/swagger.png";
 
-const visualstudiocode = "/images/techs/visualstudiocode.png";
+const visualstudiocode = "/images/skills/technical/visualstudiocode.png";
+
+const moodle = "/images/skills/technical/moodle.png";
+const powerBI = "/images/skills/technical/powerBI.png";
+const iam = "/images/skills/technical/iam.png";
+const sql = "/images/skills/technical/sql.png";
+
+const framework7 = "/images/skills/technical/framework7.png";
+const onesignal = "/images/skills/technical/onesignal.png";
+const idrive = "/images/skills/technical/idrive.png";
+const highcharts = "/images/skills/technical/highcharts.png";
+const visjs = "/images/skills/technical/visjs.png";
+
+
+
+
+
+
 
 ---
 
@@ -57,54 +74,143 @@ const visualstudiocode = "/images/techs/visualstudiocode.png";
 <section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-4">
     <div class="max-w-7xl mx-auto">
         <TitlePage title="Habilidades"  />
+
         <SubtitlePage subtitle="Transversales"></SubtitlePage>
 
-        <div class="mt-4  grid grid-cols-1 md:grid-cols-3  gap-4">
+        <div class=" grid grid-cols-1 md:grid-cols-3  gap-2">
             <CardSkills typeSkill="transversal" title="Trabajo en equipo" img="/images/skills/transversal/trabajo-en-equipo.png" ></CardSkills>
             <CardSkills typeSkill="transversal" title="Comunicación asertiva" img="/images/skills/transversal/comunicacion-asertiva.png"></CardSkills>
             <CardSkills typeSkill="transversal" title="Planificación" img="/images/skills/transversal/planificador.png"></CardSkills>
         </div>
 
+    
+        
         <SubtitlePage subtitle="Técnicas"></SubtitlePage>
 
-        <div class="mt-4  grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-7  gap-2">
-            <CardSkills title="HTML5" img={html5}></CardSkills>
-            <CardSkills title="CSS3" img={css3}></CardSkills>
-            <CardSkills title="MySQL" img={mysql}></CardSkills>
-            <CardSkills title="JavaScript" img={javascript}></CardSkills>
+        <div class="grid grid-cols-1  md:grid-cols-2 gap-2  lg:grid-cols-[60%_auto]">
+                <div class=" bg-c-white rounded-md">
+                    <SubtitlePageLevel3 subtitle="Lenguajes"></SubtitlePageLevel3>
+                    <div class="mx-2  grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5  gap-2">
+                        <CardSkills title="HTML5" img={html5}></CardSkills>
+                        <CardSkills title="CSS3" img={css3}></CardSkills>
+                        <CardSkills title="JavaScript" img={javascript}></CardSkills>
+                        <CardSkills title="PHP" img={php}></CardSkills>
+                        <CardSkills title="SQL" img={sql}></CardSkills>
+                    </div>
+                </div>
+    
+                <div class="bg-c-white grid rounded-md">
+
+                <SubtitlePageLevel3 subtitle="CMS y LMS"></SubtitlePageLevel3>
+                <div class="mx-2   grid grid-cols-2 md:grid-cols-3 sm:grid-cols-3 lg:grid-cols-3  gap-2">
+                    <CardSkills title="Wordpress" img={wordpress}></CardSkills>
+                    <CardSkills title="Woocommerce" img={woocommerce}></CardSkills>
+                    <CardSkills title="Moodle" img={moodle}></CardSkills>
+                </div>
+            </div>
+
+
+
+            <div class="grid grid-cols-1  md:grid-cols-1 gap-2  lg:grid-cols-[50%_auto]">
+                <div class=" bg-c-white rounded-md">
+                    <SubtitlePageLevel3 subtitle="AWS"></SubtitlePageLevel3>
+                    <div class="mx-2   grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-3  gap-2">
+            
+                        <CardSkills title="IAM" img={iam}></CardSkills>
+                        <CardSkills title="S3" img={s3}></CardSkills>
+                        <CardSkills title="Polly" img={polly}></CardSkills>
+                    </div>
+            
+                 
+
+                </div>
+    
+                <div class="bg-c-white grid rounded-md">
+                    <SubtitlePageLevel3 subtitle="DB"></SubtitlePageLevel3>
+                    <div class="mx-2   grid grid-cols-2 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-2  gap-2">
+            
+                        <CardSkills title="MySQL" img={mysql}></CardSkills>
+                        <CardSkills title="MariaDB" img={mariaDB}></CardSkills>
+                    </div>
+            </div>
+
+    </div>
+
+    <div class="bg-c-white grid rounded-md">
+        <SubtitlePageLevel3 subtitle="API's y SDK's"></SubtitlePageLevel3>
+        <div class="mx-2   grid grid-cols-2 md:grid-cols-4 sm:grid-cols-1 lg:grid-cols-4  gap-2">
+
+            <CardSkills title="Paypal" img={paypal}></CardSkills>
+            <CardSkills title="IBM Watson" img={ibmWatson}></CardSkills>
+            <CardSkills title="Square" img={square}></CardSkills>
+            <CardSkills title="One signal" img={onesignal}></CardSkills>
+
+        </div>
+    </div>
+</div>
+
+
+
+   
+     <div class="grid gap-2 mt-2">
+       
+<div class="grid grid-cols-1  md:grid-cols-1 gap-2  lg:grid-cols-1">
+<div class="bg-c-white grid rounded-md">
+        <SubtitlePageLevel3 subtitle="Librerías y frameworks"></SubtitlePageLevel3>
+        <div class="mt-4 mx-2   grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-7  gap-2">
+
             <CardSkills title="Astro js" img={astro}></CardSkills>
-            <CardSkills title="PHP" img={php}></CardSkills>
             <CardSkills title="jQuery" img={jquery}></CardSkills>
             <CardSkills title="Metronic" img={metronic}></CardSkills>
-            <CardSkills title="Woocommerce" img={woocommerce}></CardSkills>
-            <CardSkills title="Linux" img={linux}></CardSkills>
-            <CardSkills title="Square" img={square}></CardSkills>
-            <CardSkills title="Debian 10" img={debian}></CardSkills>
-            <CardSkills title="Amazon S3" img={s3}></CardSkills>
-            <CardSkills title="Paypal" img={paypal}></CardSkills>
-            <CardSkills title="Wordpress" img={wordpress}></CardSkills>
             <CardSkills title="Laravel" img={laravel}></CardSkills>
             <CardSkills title="Bootstrap" img={bootstrap}></CardSkills>
+            <CardSkills title="Framework7" img={framework7}></CardSkills>
+            <CardSkills title="Materialize" img={materialize}></CardSkills>
+            <CardSkills title="Tailwind" img={tailwind}></CardSkills>
+            <CardSkills title="Lumen" img={lumen}></CardSkills>
+            <CardSkills title="PHP Spreadsheet" img={phpSpreadsheet}></CardSkills>
+            <CardSkills title="Highcharts" img={highcharts}></CardSkills>
+            <CardSkills title="Vis js" img={visjs}></CardSkills>
 
+
+        </div>
+
+    </div>
+
+
+
+       
+    <div class="grid grid-cols-1  md:grid-cols-1 gap-2  lg:grid-cols-1"> 
+    <div class="bg-c-white grid rounded-md ">
+
+        <SubtitlePageLevel3 subtitle="Otros"></SubtitlePageLevel3>
+
+        <div class="mt-4 mx-2   grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-7  gap-2">
+            <CardSkills title="VS Code" img={visualstudiocode}></CardSkills>
+            <CardSkills title="Linux" img={linux}></CardSkills>
+            <CardSkills title="Debian 10" img={debian}></CardSkills>
             <CardSkills title="Github" img={github}></CardSkills>
             <CardSkills title="Gitlab" img={gitlab}></CardSkills>
-            <CardSkills title="Materialize" img={materialize}></CardSkills>
-            <CardSkills title="MariaDB" img={mariaDB}></CardSkills>
-            <CardSkills title="Amazon Polly" img={polly}></CardSkills>
             <CardSkills title="Postman" img={postman}></CardSkills>
             <CardSkills title="Trello" img={trello}></CardSkills>
-            <CardSkills title="Tailwind" img={tailwind}></CardSkills>
             <CardSkills title="Slack" img={slack}></CardSkills>
-            <CardSkills title="Lumen" img={lumen}></CardSkills>
             <CardSkills title="SourceTree" img={sourcetree}></CardSkills>
             <CardSkills title="cPanel" img={cPanel}></CardSkills>
             <CardSkills title="Grafana" img={grafana}></CardSkills>
-            <CardSkills title="IBM Watson" img={ibmWatson}></CardSkills>
-            <CardSkills title="PHP Spreadsheet" img={phpSpreadsheet}></CardSkills>
             <CardSkills title="Swagger" img={swagger}></CardSkills>
+            <CardSkills title="Power BI" img={powerBI}></CardSkills>
+            <CardSkills title="IDrive" img={idrive}></CardSkills>
+
+
+
         </div>
-        
     </div>
+</div>
+
+</div>
+
+
+</div>
 </section>
 
 </html>
