@@ -3,7 +3,7 @@ import Menu from "../components/Menu.astro";
 import TitlePage from "../components/TitlePage.astro";
 import CardWorks from "../components/CardWorks.astro";
 import GeneralHeader from "../components/GeneralHeader.astro";
-import Button from "../components/Button.astro";
+import SubtitlePage from "../components/SubtitlePage.astro";
 
 let linkDefault = "../images/projects/panel-de-administracion/panel-de-administracion-login.png";
 
@@ -25,8 +25,11 @@ let linkDefault = "../images/projects/panel-de-administracion/panel-de-administr
 
     </div>
 
+    <SubtitlePage subtitle="Laborales"></SubtitlePage>
 
-        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  gap-4">
+
+
+        <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  gap-4">
             <CardWorks id="ppad" title="Panel de administración" image={linkDefault} desc="Integración de todas las plataformas de la empresa a través de API's, para hacer seguimiento de pagos y gestión técnica." link="panel-de-administracion">
             </CardWorks>
             <CardWorks title="MVP mensajería de voz" image="../images/projects/mvp-mensajeria-de-voz.png" desc="Aplicación piloto para hacer envío grupal de mensajes de voz." link="mvp-mensajeria-de-voz">
