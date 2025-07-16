@@ -1,0 +1,83 @@
+---
+import Menu from "../../components/Menu.astro";
+import TitlePage from "../../components/TitlePage.astro";
+import CardProblem from "../../components/CardProblem.astro";
+import CardSolution from "../../components/CardSolution.astro";
+
+import CardAchievements from "../../components/CardAchievements.astro";
+import CardTools from "../../components/CardTools.astro";
+import CardTeam from "../../components/CardTeam.astro";
+import CardCompanyLogo from "../../components/CardCompanyLogo.astro";
+import CardYear from "../../components/CardYear.astro";
+import Button from "../../components/Button.astro";
+import ButtonBack from "../../components/ButtonBack.astro";
+import GeneralHeader from "../../components/GeneralHeader.astro";
+
+const logoCompany = "/images/companies/logoPerfil.png";
+const jquery = "/images/skills/technical/jquery.png";
+const php = "/images/skills/technical/php.png";
+const cPanel = "/images/skills/technical/cPanel.png";
+const materialize = "/images/skills/technical/materialize.png";
+const wordpress = "/images/skills/technical/wordpress.png";
+
+
+---
+<head>
+	<GeneralHeader></GeneralHeader>
+    <title>David Tapias - Proyectos - página web a la medida</title>
+</head>
+<Menu></Menu>
+<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-4 ">
+    <div class="max-w-7xl mx-auto">
+
+        <TitlePage title="Página web con wordpress" subtitle=""></TitlePage>
+     
+        <Button text="Ver online" ico="external" target="external"  link="https://origami.davidtapias.com" ></Button>
+        <div class="grid grid-cols-1 gap-2 sm:grid-cols-1 lg:grid-cols-1 mt-2">
+
+        <div class="grid gap-2  sm:grid-cols-1  lg:grid-cols-[20%_auto]">
+            <CardCompanyLogo  logo={logoCompany} companyName="Ninguna" ></CardCompanyLogo>
+            <CardProblem description="Uno de mis pasatiempos principales es practicar Origami, tiempo después empecé a hacer modelos originales, a pesar de que uso una cuenta de instagram para compartir modelos de otros autores que he plegado y también mis creaciones, quería segmentar y compartir otros temas que no permite una cuenta de Instagram. Desde el punto de vista técnico, era una opción para practicar y entender un poco la construcción de templates para wordpress."></CardProblem>
+        </div>
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-2  ">
+           
+            <CardSolution  description= "Desarrollo de una página web con estilo Materialize donde se muestran imágenes y descripciones de los modelos de origami, sección para descargar o visualizar instructivos en diferentes formatos, agregación de un blog para crear artículos de experiencias y temas técnicos del origami, sección de eventos donde he participado y un formulario de contacto. Implementación básica de un template para wordpress. Configuraciónes generales con cPanel."></CardSolution>
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-1  lg:grid-rows-1">
+            <CardAchievements list={["Obtención de un cliente para proyecto de publicidad con origami.", "Se dió a conocer la creación de papel sandwich a través del blog, haciendo que principiantes en el tema lograran crear su papel.","Se integró Materialize a través de la creación de un template.", "Entendimiento de los Custom post Types y meta boxes.","Entendimiento general en la creación de templates para wordpress."]} ></CardAchievements>
+
+            <div class="grid grid-cols-1  gap-2 lg:grid-cols-2  lg:grid-rows-1">
+                <CardTeam  team={["Proyecto individual."]}></CardTeam>
+               <CardYear year="2022"></CardYear>
+
+            </div>
+        </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-1">
+                <CardTools tools={[
+                   
+                    {
+                        "name":"Wordpress", "image":wordpress
+                    },
+                    {
+                        "name":"Materialize", "image":materialize
+                    },
+                    
+                    {
+                        "name":"jQuery", "image":jquery
+                    },
+                    {
+                        "name":"PHP", "image":php
+                    },
+                    {
+                        "name":"cPanel", "image":cPanel
+                    }
+                ]}>
+                </CardTools>
+           </div>
+            </div>
+    </div>
+</section>
+
+<ButtonBack link="/proyectos/"></ButtonBack>
