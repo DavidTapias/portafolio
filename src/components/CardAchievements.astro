@@ -12,7 +12,7 @@ const {list} = Astro.props;
         <h3 class="font-bold text-2xl text-c-dark-gray">Logros</h3>
         <article class="p-2 text-c-black">
             <p>
-                <ul class="list-disc list-inside">
+                <ul class="list-disc ml-4">
                     {list.map((done) => (
                         <li>{done}</li>
                     ))}

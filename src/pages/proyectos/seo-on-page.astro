@@ -1,0 +1,90 @@
+---
+import Menu from "../../components/Menu.astro";
+import TitlePage from "../../components/TitlePage.astro";
+import CardProblem from "../../components/CardProblem.astro";
+import CardSolution from "../../components/CardSolution.astro";
+
+import CardAchievements from "../../components/CardAchievements.astro";
+import CardTools from "../../components/CardTools.astro";
+import CardTeam from "../../components/CardTeam.astro";
+import CardCompanyLogo from "../../components/CardCompanyLogo.astro";
+import CardYear from "../../components/CardYear.astro";
+import ButtonBack from "../../components/ButtonBack.astro";
+import GeneralHeader from "../../components/GeneralHeader.astro";
+import Gallery from "../../components/Gallery.astro";
+
+const logoCompany = "/images/companies/logoLaPeceraCreativa.png";
+const css3 = "/images/skills/technical/css3.png";
+const html5 = "/images/skills/technical/html5.png";
+const seo = "/images/skills/technical/seoonpage.png";
+
+
+
+const baseGallery = "/images/projects/seo-on-page/";
+const imgGallery = [
+    baseGallery+"seo-on-page-h1.jpg",
+    baseGallery+"seo-on-page-h.jpg", 
+    baseGallery+"seo-on-page-meta.jpg",
+    baseGallery+"seo-on-page-fondo.jpg",
+    baseGallery+"seo-on-page-img.jpg",
+    baseGallery+"seo-on-page-redirects.jpg",
+
+];
+
+
+---
+<head>
+	<GeneralHeader></GeneralHeader>
+    <title>David Tapias - Proyectos - SEO On Page</title>
+</head>
+<Menu></Menu>
+<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-4 ">
+    <div class="max-w-7xl mx-auto">
+
+        <TitlePage title="Página web a la medida" subtitle=""></TitlePage>
+     
+         <Gallery class="z-2 relative" images={imgGallery}>
+        </Gallery>
+        <!-- <ButtonProject text="Ver online" link="" ></ButtonProject> -->
+        <div class="grid grid-cols-1 gap-2 sm:grid-cols-1 lg:grid-cols-1 mt-2">
+
+        <div class="grid gap-2  sm:grid-cols-1  lg:grid-cols-[20%_auto]">
+            <CardCompanyLogo  logo={logoCompany} companyName="La pecera creativa" ></CardCompanyLogo>
+            <CardProblem description="Una agencia de publicidad requiere mejoras de usabilidad y de SEO on Page de una página web de condominios, hay algunos textos que no son visibles por el contraste con el fondo que es un video, también las URL's no son amigables y las etiquetas html no están siendo usadas con la semántica adecuada. La agencia hace entrega de grupo de palabras clave, textos y notas sobre las mejoras se esperan."></CardProblem>
+        </div>
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-2  ">
+           
+            <CardSolution  description= "Siguiendo el material entregado, se realizan los ajustes de usabilidad y SEO, tales como uso adecuado de etiquetas H , redireccionamientos 301, un recuadro en los textos para hacer contraste con el fondo, recorte y redimensión adecuado de imágenes, titles, textos para meta descriptions, entre otros."></CardSolution>
+
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-1  lg:grid-rows-1">
+            <CardAchievements list={["Se mejoró la lectura de textos y botones que tenían como fondo el video.", "Se optmimizaron las imágenes.", "Se mejoró la semántica HTML.", "Se transformaron las URLS's para que fueran más amigables."]} ></CardAchievements>
+
+            <div class="grid grid-cols-1  gap-2 lg:grid-cols-2  lg:grid-rows-1">
+                <CardTeam  team={["Gestora de proyectos.", "Community manager."]}></CardTeam>
+               <CardYear year="2016"></CardYear>
+
+            </div>
+        </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-1">
+                <CardTools tools={[
+                    {
+                        "name":"Seo on page", "image":seo
+                    },
+                   
+                    {
+                        "name":"HTML5", "image":html5
+                    },
+                    {
+                        "name":"CSS3", "image":css3
+                    }
+                ]}>
+                </CardTools>
+           </div>
+            </div>
+    </div>
+</section>
+
+<ButtonBack link="/proyectos/"></ButtonBack>
