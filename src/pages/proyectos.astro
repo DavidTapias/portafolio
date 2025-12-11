@@ -25,43 +25,42 @@ let linkDefault = "../images/projects/panel-de-administracion/panel-de-administr
 
         </div>
 
-    <SubtitlePage subtitle="Laborales"></SubtitlePage>
+    <!-- <SubtitlePage subtitle="Laborales"></SubtitlePage> -->
+     <div class="flex-row mt-4 mb-4">
+        <a href="/proyectos" class='w-10 bottom-4 right-4 px-6 py-2 bg-c-black text-sm font-bold text-c-white'> Laborales</a>
+        <a href="/proyectosPersonales" class='bottom-4 right-4 px-6 py-2 bg-c-black text-sm font-bold text-c-dark-yellow'>Personales</a>
+    </div>
 
-
+    
 
         <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  gap-4">
-            <CardWorks id="ppad" title="Panel de administración" image={linkDefault} desc="Integración de todas las plataformas de la empresa a través de API's, para hacer seguimiento de pagos y gestión técnica." link="panel-de-administracion">
+            <CardWorks id="ppad" title="Panel de administración" image={linkDefault} desc="Integración de todas las plataformas de la empresa a través de API's, para hacer seguimiento de pagos y gestión técnica." link="/proyectos/panel-de-administracion">
             </CardWorks>
-            <CardWorks title="MVP mensajería de voz" image="../images/projects/mvp-mensajeria-de-voz.png" desc="Aplicación piloto para hacer envío grupal de mensajes de voz." link="mvp-mensajeria-de-voz">
+            <CardWorks title="MVP mensajería de voz" image="../images/projects/mvp-mensajeria-de-voz.png" desc="Aplicación piloto para hacer envío grupal de mensajes de voz." link="/proyectos/mvp-mensajeria-de-voz">
             </CardWorks>
-            <CardWorks title="Tienda para pyme" image="../images/projects/tienda-para-pyme.png" desc="Despliegue y personalización de tienda para distribuidora de frutas y verduras." link="tienda-para-pyme">
+            <CardWorks title="Tienda para pyme" image="../images/projects/tienda-para-pyme.png" desc="Despliegue y personalización de tienda para distribuidora de frutas y verduras." link="/proyectos/tienda-para-pyme">
             </CardWorks>
             
-            <CardWorks title="Automatización de SMS" image="../images/projects/automatizacion-de-sms.png" desc="Automatización en la gestión de SMS a través de la creación de un pseudolenguaje basado en llaves, operadores lógicos y diccionarios." link="automatizacion-de-sms">
+            <CardWorks title="Automatización de SMS" image="../images/projects/automatizacion-de-sms.png" desc="Automatización en la gestión de SMS a través de la creación de un pseudolenguaje basado en llaves, operadores lógicos y diccionarios." link="/proyectos/automatizacion-de-sms">
             </CardWorks>
          
 
             
-            <CardWorks title="Objetos virtuales de aprendizaje" image="../images/projects/ovas.png" desc="Desarrollo de más de 20 OVAs (Objetos Virtuales de Aprendizaje) para reutilizarlos e integrarlos a diferentes cursos virtuales." link="ovas">
+            <CardWorks title="Objetos virtuales de aprendizaje" image="../images/projects/ovas.png" desc="Desarrollo de más de 20 OVAs (Objetos Virtuales de Aprendizaje) para reutilizarlos e integrarlos a diferentes cursos virtuales." link="/proyectos/ovas">
             </CardWorks> 
 
-            <CardWorks title="SEO on page" image="../images/projects/seo-on-page.png" desc="SEO on page y mejoras de usabilidad para página web de condominios." link="seo-on-page"></CardWorks>
+            <CardWorks title="SEO on page" image="../images/projects/seo-on-page.png" desc="SEO on page y mejoras de usabilidad para página web de condominios." link="/proyectos/seo-on-page"></CardWorks>
             
-            <CardWorks title="Página web a la medida" image="../images/projects/pagina-web-a-la-medida.png" desc="Desarrollo web a la medida para dar presencia en internet a locutor nacional." link="pagina-web-a-la-medida">
+            <CardWorks title="Página web a la medida" image="../images/projects/pagina-web-a-la-medida.png" desc="Desarrollo web a la medida para dar presencia en internet a locutor nacional." link="/proyectos/pagina-web-a-la-medida">
             </CardWorks>
         </div>
-
-    <SubtitlePage subtitle="Personales"></SubtitlePage>
-         <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  gap-4">
-            <CardWorks id="ppad" title="Página web con wordpress" image="../images/projects/wordpress-template.png" desc="Desarrollo web con wordpress, creando un tema de prueba, para entender el flujo y funcionamiento de wordpress." link="wordpress-tema">
-            </CardWorks>
-    </div>
 </section>
 
 
 <script>
 
 window.addEventListener('DOMContentLoaded', function() {
+
     let linkDefault = "../images/projects/panel-de-administracion/panel-de-administracion-login.png";
     let ppad = document.querySelector("#ppad>img");
     isBreakpointMD();
