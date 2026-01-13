@@ -1,0 +1,95 @@
+---
+import Menu from "../../components/Menu.astro";
+import TitlePage from "../../components/TitlePage.astro";
+import Gallery from "../../components/Gallery.astro";
+import CardProblem from "../../components/CardProblem.astro";
+import CardSolution from "../../components/CardSolution.astro";
+
+import CardAchievements from "../../components/CardAchievements.astro";
+import CardTools from "../../components/CardTools.astro";
+import CardTeam from "../../components/CardTeam.astro";
+import CardCompanyLogo from "../../components/CardCompanyLogo.astro";
+import CardYear from "../../components/CardYear.astro";
+import ButtonBack from "../../components/ButtonBack.astro";
+import GeneralHeader from "../../components/GeneralHeader.astro";
+
+const logoCompany = "/images/companies/logoEml.png";
+
+const rootTechnicalSkills = "/images/skills/technical/"
+const chatGpt = rootTechnicalSkills+"chatGpt.png";
+const python = rootTechnicalSkills+"python.png";
+const selenium = rootTechnicalSkills+"selenium.png";
+const lighthouse = rootTechnicalSkills+"lighthouse.png";
+
+
+
+const baseGallery = "/images/projects/automatizacion-web/";
+
+const imgGallery = [
+    baseGallery+"automatizacion-web-metrics-pc.png",
+    baseGallery+"automatizacion-web-seo-pc.png", 
+    baseGallery+"automatizacion-web-best-practices-pc.png",
+    baseGallery+"automatizacion-web-accesibility.png"
+];
+
+---
+
+<head>
+	<GeneralHeader></GeneralHeader>
+    <title>David Tapias - Proyectos - Automatización web</title>
+</head>
+<Menu></Menu>
+<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 mb-10 px-4 ">
+    <div class="max-w-7xl mx-auto">
+
+        <TitlePage title="Automatización web" subtitle=""></TitlePage>
+        <Gallery class="z-2 relative" images={imgGallery}>
+        </Gallery>
+        <div class="grid grid-cols-1 gap-2 sm:grid-cols-1 lg:grid-cols-1 mt-2">
+
+        <div class="grid gap-2  sm:grid-cols-1  lg:grid-cols-[20%_auto]">
+            <CardCompanyLogo  logo={logoCompany} companyName="EML" ></CardCompanyLogo>
+            <CardProblem description="En la empresa se generan multiples landings y micrositios y en una búsqueda de mejorar la calidad de los mismos, el proceso de revisar las mejoras visuales y de código se hacen de forma manual, para optimizar el tiempo de estas revisiones , se requiere automatizar este proceso, tanto para páginas públicas como páginas privadas. Dentro de los temas a revisar están las Core Web Vitals, peticiones HTTP, atributos ARIA, entreo otros."></CardProblem>
+        </div>
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-2  ">
+           
+            <CardSolution  description= "Teniendo en cuenta que Selenium sirve para simular la navegación web con ChromeDriver, permite la captura de sesiones para manipular páginas post - login y su uso principal de automatización, se usó y se integró con ligththouse para generar las métricas (Core Web Vitals). 
+            En este proyecto se utilizó la IA de ChatGPT para la creación de scripts en python que validaran respuestas HTTP y extracción de URLs de los assets de las páginas. El uso de ChatGPT optimizó el tiempo de desarrollo y mostró nuevas librerías y soluciones para dar con el objetivo de este proyecto.
+            "></CardSolution>
+
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-1  lg:grid-rows-1">
+            <CardAchievements list={["El uso de chatGPT como herramienta para generar funciones y scripts, me permitió reducir mi tiempo de desarrollo, descubrir nuevas librerías y otras formas de solucionar problemas", "Mejoré la escritura de prompts para chatGPT, reduciendo el número de iteraciones y resultados verbosos."]} ></CardAchievements>
+
+            <div class="grid grid-cols-1  gap-2 lg:grid-cols-2  lg:grid-rows-1">
+                <CardTeam  team={["Desarrolladores de software."]}></CardTeam>
+               <CardYear year="2026"></CardYear>
+
+            </div>
+        </div>
+        
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-1">
+                <CardTools tools={[
+                    {
+                        "name":"Chat GPT", "image":chatGpt
+                    },
+                    {
+                        "name":"Python", "image":python
+                    },
+                    {
+                        "name":"Selenium", "image":selenium
+                    },
+                    {
+                        "name":"Lighthouse", "image":lighthouse
+                    }
+                ]}>
+
+                </CardTools>
+           </div>
+            </div>
+    </div>
+</section>
+
+<ButtonBack link="/proyectos/"></ButtonBack>
