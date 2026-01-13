@@ -49,18 +49,16 @@ const imgGallery = [
 
         <div class="grid gap-2  sm:grid-cols-1  lg:grid-cols-[20%_auto]">
             <CardCompanyLogo  logo={logoCompany} companyName="EML" ></CardCompanyLogo>
-            <CardProblem description="En la empresa se generan multiples landings y micrositios y en una búsqueda de mejorar la calidad de los mismos, el proceso de revisar las mejoras visuales y de código se hacen de forma manual, para optimizar el tiempo de estas revisiones , se requiere automatizar este proceso, tanto para páginas públicas como páginas privadas. Dentro de los temas a revisar están las Core Web Vitals, peticiones HTTP, atributos ARIA, entreo otros."></CardProblem>
+            <CardProblem description="En la empresa se generan múltiples landings y micrositios y en una búsqueda de mejorar la calidad de los mismos, el proceso de revisar las mejoras visuales y de código se hacen de forma manual, para optimizar el tiempo de estas revisiones, se requiere automatizar este proceso, tanto para páginas públicas como páginas privadas. Dentro de los temas a revisar están las Core Web Vitals, peticiones HTTP, atributos ARIA, entre otros. NOTA: Por temas de confidencialidad, las imágenes muestran un ejemplo de los resultados con lighthouse haciendo uso de una página personal, no se muestran resultados de otros scripts desarrollados."></CardProblem>
         </div>
 
         <div class="grid grid-cols-1 gap-2  lg:grid-cols-2  ">
            
-            <CardSolution  description= "Teniendo en cuenta que Selenium sirve para simular la navegación web con ChromeDriver, permite la captura de sesiones para manipular páginas post - login y su uso principal de automatización, se usó y se integró con ligththouse para generar las métricas (Core Web Vitals). 
-            En este proyecto se utilizó la IA de ChatGPT para la creación de scripts en python que validaran respuestas HTTP y extracción de URLs de los assets de las páginas. El uso de ChatGPT optimizó el tiempo de desarrollo y mostró nuevas librerías y soluciones para dar con el objetivo de este proyecto.
-            "></CardSolution>
+            <CardSolution  description= "Teniendo en cuenta que Selenium sirve para simular la navegación web con ChromeDriver, permite la captura de sesiones para manipular páginas post - login y su uso principal de automatización, se eligió como herramienta y se integró con lighthouse para generar las métricas (Core Web Vitals). Como mano derecha para este proyecto se usó la IA de ChatGPT para la creación de scripts en python que validaran respuestas HTTP y que pudieran extraer las URLs de páginas, imágenes, videos, iconos, y en general todos los recursos de las páginas, con la intención de verificar la existencia de dicho recurso y la generación de informes de lighthouse de múltiples páginas en segundos. Los resultados se obtuvieron en archivos JSON y HTML, para dar la posibilidad de personalizar dashboards con los ítems relevantes de cada página."></CardSolution>
 
 
         <div class="grid grid-cols-1 gap-2  lg:grid-cols-1  lg:grid-rows-1">
-            <CardAchievements list={["El uso de chatGPT como herramienta para generar funciones y scripts, me permitió reducir mi tiempo de desarrollo, descubrir nuevas librerías y otras formas de solucionar problemas", "Mejoré la escritura de prompts para chatGPT, reduciendo el número de iteraciones y resultados verbosos."]} ></CardAchievements>
+            <CardAchievements list={["El uso de chatGPT como herramienta para generar funciones y scripts, me permitió reducir tiempo de desarrollo, descubrir nuevas librerías y otras alternativas para solucionar el problema.", "Mejoré la escritura de prompts para chatGPT, reduciendo el número de iteraciones y resultados verbosos."]} ></CardAchievements>
 
             <div class="grid grid-cols-1  gap-2 lg:grid-cols-2  lg:grid-rows-1">
                 <CardTeam  team={["Desarrolladores de software."]}></CardTeam>
@@ -73,7 +71,7 @@ const imgGallery = [
             <div class="grid grid-cols-1 lg:grid-cols-1">
                 <CardTools tools={[
                     {
-                        "name":"Chat GPT", "image":chatGpt
+                        "name":"ChatGPT", "image":chatGpt
                     },
                     {
                         "name":"Python", "image":python
