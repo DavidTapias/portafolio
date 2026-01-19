@@ -30,13 +30,14 @@ let linkDefault = "../images/projects/panel-de-administracion/panel-de-administr
         <a href="/proyectos" class='w-10 bottom-4 right-4 px-6 py-2 bg-c-black text-sm font-bold text-c-white border hover:text-c-dark-yellow rounded-md'> Laborales</a>
         <a href="/proyectosPersonales" class='bottom-4 right-4 px-6 py-2 bg-c-black text-sm font-bold text-c-white   hover:text-c-dark-yellow rounded-md'>Personales</a>
     </div>
-
-    
-
-        <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  gap-4">
-            <CardWorks id="paw" title="Automatización web" image="../images/projects/automatizacion-web.png" desc="Generación de scripts con ChatGPT y automatización de Core Web Vitals con Selenium (python) y lighthouse." link="/proyectos/automatizacion-web">
+        <div class=" grid grid-cols-1 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2  gap-4">
+            <CardWorks title="Automatización web" image="../images/projects/automatizacion-web.png" 
+            imageMb = "../images/projects/automatizacion-web-md.png"
+            desc="Generación de scripts con ChatGPT y automatización de Core Web Vitals con Selenium (python) y lighthouse." link="/proyectos/automatizacion-web">
             </CardWorks>
-            <CardWorks id="ppad" title="Panel de administración" image={linkDefault} desc="Integración de todas las plataformas de la empresa a través de API's, para hacer seguimiento de pagos y gestión técnica." link="/proyectos/panel-de-administracion">
+            <CardWorks title="Panel de administración" image={linkDefault} 
+            imageMb="../images/projects/panel-de-administracion-login-md.png"
+            desc="Integración de todas las plataformas de la empresa a través de API's, para hacer seguimiento de pagos y gestión técnica." link="/proyectos/panel-de-administracion">
             </CardWorks>
             <CardWorks title="MVP mensajería de voz" image="../images/projects/mvp-mensajeria-de-voz.png" desc="Aplicación piloto para hacer envío grupal de mensajes de voz." link="/proyectos/mvp-mensajeria-de-voz">
             </CardWorks>
@@ -58,41 +59,6 @@ let linkDefault = "../images/projects/panel-de-administracion/panel-de-administr
         </div>
 </section>
 
-
 <script>
-
-window.addEventListener('DOMContentLoaded', function() {
-
-    let linkDefault = "../images/projects/panel-de-administracion/panel-de-administracion-login.png";
-
-    let linkDefaultPaw = "../images/projects/automatizacion-web.png";
-
-    let ppad = document.querySelector("#ppad>img");
-    let paw = document.querySelector("#paw>img");
-
-    isBreakpointMD();
-
-   function isBreakpointMD() {
-    return window.matchMedia('(min-width: 1024px)').matches;
-  }
-
-  function updateLinkBasedOnScreenSize() {
-  
-        if (isBreakpointMD()) {
-            linkDefault =  "../images/projects/panel-de-administracion-login.png"; 
-            ppad.setAttribute("src",linkDefault);
-            let linkDefaultPaw = "../images/projects/automatizacion-web.png";
-            paw.setAttribute("src",linkDefaultPaw);
-
-            } else {
-             linkDefault =  "../images/projects/panel-de-administracion-login-md.png";
-            ppad.setAttribute("src",linkDefault);
-            let linkDefaultPaw = "../images/projects/automatizacion-web-md.png";
-            paw.setAttribute("src",linkDefaultPaw);
-            }   
-  }
-  updateLinkBasedOnScreenSize();
-  window.addEventListener('resize', updateLinkBasedOnScreenSize);
-})
 </script>
 </html>

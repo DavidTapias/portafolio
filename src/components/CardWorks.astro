@@ -2,16 +2,20 @@
 export interface props{
     id:string,
     image:string;
+    imageMb:string;
     title:string;
     desc:string;
     link:string;
 }
 
-const {id,image,title,desc, link} = Astro.props;
+const {id,image, imageMb,title,desc, link} = Astro.props;
 ---
 
 <div id={id} class="relative bg-c-white rounded-md shadow-md ">
-    <img src={image} alt="imagen" class="object-cover rounded-t-md  h-80">
+    <picture class="h-80">
+        <source srcset={imageMb} media="(max-width: 1024px)" />
+        <img src={image} alt="imagen" class="w-full  object-cover">
+    </picture>
     <div class="p-6 mb-6">
         <h2 class="font-bold text-2xl text-c-dark-gray">{title}</h2>
         <article class="p-2"><p>{desc}</p></article>
