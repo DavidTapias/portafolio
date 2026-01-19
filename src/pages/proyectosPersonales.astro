@@ -5,7 +5,6 @@ import CardPersonalWorks from "../components/CardPersonalWorks.astro";
 import GeneralHeader from "../components/GeneralHeader.astro";
 import SubtitlePage from "../components/SubtitlePage.astro";
 
-let linkDefault = "../images/projects/panel-de-administracion/panel-de-administracion-login.png";
 ---
 <html lang="es">
 <head>
@@ -33,36 +32,9 @@ let linkDefault = "../images/projects/panel-de-administracion/panel-de-administr
 
     <!-- <SubtitlePage subtitle="Personales"></SubtitlePage> -->
          <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  gap-4">
-            <CardPersonalWorks id="ppad" title="Página web con wordpress" image="../images/projects/wordpress-tema.png" desc="Desarrollo web con wordpress, creando un tema de prueba, para entender el flujo y funcionamiento de wordpress." link="/proyectos/wordpress-tema">
+            <CardPersonalWorks title="Página web con wordpress" image="../images/projects/wordpress-tema.png" desc="Desarrollo web con wordpress, creando un tema de prueba, para entender el flujo y funcionamiento de wordpress." link="/proyectos/wordpress-tema">
             </CardPersonalWorks>
     </div>
 </section>
 
-
-<script>
-
-window.addEventListener('DOMContentLoaded', function() {
-
-    let linkDefault = "../images/projects/panel-de-administracion/panel-de-administracion-login.png";
-    let ppad = document.querySelector("#ppad>img");
-    isBreakpointMD();
-
-   function isBreakpointMD() {
-    return window.matchMedia('(min-width: 1024px)').matches;
-  }
-
-  function updateLinkBasedOnScreenSize() {
-  
-        if (isBreakpointMD()) {
-            linkDefault =  "../images/projects/panel-de-administracion-login.png"; 
-            ppad.setAttribute("src",linkDefault);
-            } else {
-             linkDefault =  "../images/projects/panel-de-administracion-login-md.png";
-            ppad.setAttribute("src",linkDefault);
-            }   
-  }
-  updateLinkBasedOnScreenSize();
-  window.addEventListener('resize', updateLinkBasedOnScreenSize);
-})
-</script>
 </html>
