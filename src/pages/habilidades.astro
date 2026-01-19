@@ -10,6 +10,8 @@ const rootTechnicalSkills = "/images/skills/technical/"
 const metronic = rootTechnicalSkills+"metronic.png";
 const jquery = rootTechnicalSkills+"jquery.png";
 const mysql = rootTechnicalSkills+"mysql.png";
+const sqlServer = rootTechnicalSkills+"sqlServer.png";
+
 const woocommerce = rootTechnicalSkills+"woocommerce.png";
 const square = rootTechnicalSkills+"square.png";
 const php = rootTechnicalSkills+"php.png";
@@ -67,6 +69,9 @@ const chatGpt = rootTechnicalSkills+"chatGpt.png";
 const newfiesdialer = rootTechnicalSkills+"newfiesDialer.png";
 const bitrix24= rootTechnicalSkills+"bitrix24.png";
 const copilot= rootTechnicalSkills+"copilot.png";
+const meta = rootTechnicalSkills+"meta.png";
+const stitch = rootTechnicalSkills+"stitch.png";
+
 const seoonpage= rootTechnicalSkills+"seoonpage.png";
 
 const vue = rootTechnicalSkills+"vue.png";
@@ -142,7 +147,7 @@ const selenium = rootTechnicalSkills+"selenium.png";
     <div class="bg-c-white grid rounded-md ">
 
         <SubtitlePageLevel3 subtitle="CMS"></SubtitlePageLevel3>
-            <div class="mx-2   grid grid-cols-2 md:grid-cols-3 sm:grid-cols-3 lg:grid-cols-3 gap-2 ">
+            <div class="mx-2   grid grid-cols-2 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2 ">
                 <CardSkills title="AEM" img={aem}></CardSkills>
                 <CardSkills title="Wordpress" img={wordpress}></CardSkills>
                 <CardSkills title="WooCommerce" img={woocommerce}></CardSkills>
@@ -151,15 +156,14 @@ const selenium = rootTechnicalSkills+"selenium.png";
 
         <div class="bg-c-white grid rounded-md">
             <SubtitlePageLevel3 subtitle="DB's"></SubtitlePageLevel3>
-            <div class="mx-2   grid grid-cols-2 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-2  gap-2">
+            <div class="mx-2   grid grid-cols-2 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3  gap-2">
                 <CardSkills title="MySQL" img={mysql}></CardSkills>
                 <CardSkills title="MariaDB" img={mariaDB}></CardSkills>
+                <CardSkills title="SQL Server" img={sqlServer}></CardSkills>
+                
             </div>
         </div>
        
-  
-
-
         <div class=" bg-c-white rounded-md ">
             <SubtitlePageLevel3 subtitle="AWS"></SubtitlePageLevel3>
             <div class="mx-2   grid grid-cols-3 md:grid-cols-3 sm:grid-cols-3 lg:grid-cols-3  gap-2 ">
@@ -171,8 +175,6 @@ const selenium = rootTechnicalSkills+"selenium.png";
 
 
 </div>
-
-
 
    
      <div class="grid gap-2 ">
@@ -200,7 +202,7 @@ const selenium = rootTechnicalSkills+"selenium.png";
 
         </div>
 
-
+      
 
 
         <div class="bg-c-white grid rounded-md">
@@ -228,6 +230,21 @@ const selenium = rootTechnicalSkills+"selenium.png";
 </div>
 
 
+<div class="grid grid-cols-1  md:grid-cols-1 gap-2  lg:grid-cols-1"> 
+    <div class="bg-c-white grid rounded-md ">
+
+        <SubtitlePageLevel3 subtitle="Inteligencia artificial"></SubtitlePageLevel3>
+
+        <div class="mx-2   grid grid-cols-2 md:grid-cols-4 sm:grid-cols-2 lg:grid-cols-8  gap-2">
+            <CardSkills title="IBM Watson" img={ibmWatson}></CardSkills>
+            <CardSkills title="Copilot" img={copilot}></CardSkills>
+            <CardSkills title="ChatGPT" img={chatGpt}></CardSkills>
+            <CardSkills title="Meta" img={meta}></CardSkills>
+            <CardSkills title="Stitch" img={stitch}></CardSkills>
+
+        </div>
+    </div>
+</div>
   
 <div class="grid grid-cols-1  md:grid-cols-1 gap-2  lg:grid-cols-1"> 
     <div class="bg-c-white grid rounded-md ">
@@ -236,9 +253,7 @@ const selenium = rootTechnicalSkills+"selenium.png";
 
         <div class="mx-2   grid grid-cols-2 md:grid-cols-4 sm:grid-cols-2 lg:grid-cols-8  gap-2">
             <CardSkills title="VS Code" img={visualstudiocode}></CardSkills>
-            <CardSkills title="Copilot" img={copilot}></CardSkills>
-            <CardSkills title="ChatGPT" img={chatGpt}></CardSkills>
-
+          
             <CardSkills title="Linux" img={linux}></CardSkills>
             <CardSkills title="Debian 10" img={debian}></CardSkills>
             <CardSkills title="Github" img={github}></CardSkills>

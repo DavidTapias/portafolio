@@ -11,10 +11,10 @@ export interface props{
 const {id,image, imageMb,title,desc, link} = Astro.props;
 ---
 
-<div id={id} class="relative bg-c-white rounded-md shadow-md ">
+<div id={id} class="relative bg-c-white rounded-md overflow-hidden shadow-md ">
     <picture class="h-80">
         <source srcset={imageMb} media="(max-width: 1024px)" />
-        <img src={image} alt="imagen" class="  object-cover w-full">
+        <img src={image} alt="imagen" class=" object-cover w-full">
     </picture>
     <div class="p-6 mb-6">
         <h2 class="font-bold text-2xl text-c-dark-gray">{title}</h2>
