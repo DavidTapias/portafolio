@@ -1,0 +1,58 @@
+{
+  "path": "objetos-virtuales-de-aprendizaje",
+  "seo": {
+    "metaDescription": "Diseño y desarrollo de objetos virtuales de aprendizaje (OVA) interactivos para cursos de entidades gubernamentales, usando tecnologías web front-end."
+  },
+  "project": {
+    "title": "Objetos virtuales de aprendizaje",
+    "subtitle": ""
+  },
+  "company": {
+    "name": "Estratco",
+    "logo": {
+      "path": "/images/companies/",
+      "image": "logoEstratco.png"
+    }
+  },
+  "problem": {
+    "description": "En la empresa se desarrollan múltiples cursos para capacitar al personal de diferentes entidades gubernamentales (UGPP, Supersalud, Colpensiones, etc.). Los contenidos suelen ser densos de explicar, por lo que se requiere una estrategia más amigable para presentar la información. Se necesitan elementos gráficos e interactivos reutilizables, pensados exclusivamente para PC, con posibilidad de ejecutarse sin conexión a internet y ser distribuidos en CD o USB."
+  },
+  "solution": {
+    "description": "Aprovechando tecnologías web como APIs de HTML5, canvas, animaciones CSS3 y eventos JavaScript (click, drag and drop, hover, etc.), se desarrollaron más de 20 objetos virtuales de aprendizaje reutilizables en distintos cursos. Se usaron únicamente tecnologías front-end para garantizar su ejecución en navegador, independientemente de la conexión a internet."
+  },
+  "achievements": [
+    "Se optimizó el tiempo en la construcción de contenidos interactivos.",
+    "Se ampliaron las alternativas para desglosar temáticas densas de explicar."
+  ],
+  "team": [
+    "Gestora de proyectos",
+    "Pedagoga",
+    "Diseñadores gráficos"
+  ],
+  "year": 2017,
+  "tools": {
+    "path": "/images/skills/technical/",
+    "icons": [
+      { "name": "HTML5", "image": "html5.png" },
+      { "name": "CSS3", "image": "css3.png" },
+      { "name": "JavaScript", "image": "javascript.png" },
+      { "name": "jQuery", "image": "jquery.png" }
+    ]
+  },
+  "links": {
+    "examples": [
+      {
+        "label": "Tarjetas",
+        "url": "https://davidtapias.com/proyectos/ovas/tarjetas"
+      },
+      {
+        "label": "Persiana horizontal",
+        "url": "https://davidtapias.com/proyectos/ovas/persianaHorizontal"
+      },
+      {
+        "label": "Slider parallax",
+        "url": "https://davidtapias.com/proyectos/ovas/sliderParalaxh"
+      }
+    ]
+  }
+}

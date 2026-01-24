@@ -1,0 +1,50 @@
+{
+  "path": "tienda-para-pyme",
+  "seo": {
+    "metaDescription": "Desarrollo de tienda virtual para una pyme en Bogotá usando WordPress y WooCommerce, con pago contra entrega, generación de recibos y automatización de pedidos."
+  },
+  "project": {
+    "title": "Tienda para pyme",
+    "subtitle": ""
+  },
+  "company": {
+    "name": "Smart Automation Systems",
+    "logo": {
+      "path": "/images/companies/",
+      "image": "logoYomercobien.png"
+    }
+  },
+  "problem": {
+    "description": "Se requiere una tienda virtual para la venta de frutas y verduras en Bogotá, con método de pago contra entrega y generación de recibos imprimibles por pedido. Además, se necesita consolidar la información de clientes, productos y cantidades en un archivo Excel. El proyecto incluye la compra de dominio, creación de correos corporativos y despliegue en producción."
+  },
+  "solution": {
+    "description": "Se implementa WooCommerce como tecnología base, realizando personalizaciones visuales (colores, logo e imágenes) y ajustes de configuración según los requerimientos. Para la generación de recibos imprimibles, se modifica y personaliza un plugin existente. El proyecto se despliega en un hosting con cPanel, incluyendo compra de dominio y configuración general."
+  },
+  "achievements": [
+    "Se mejoró la experiencia de usuario para realizar pedidos.",
+    "Se automatizó la creación de listados de compras."
+  ],
+  "team": [
+    "Proyecto llevado a cabo de forma individual"
+  ],
+  "year": 2021,
+  "tools": {
+    "path": "/images/skills/technical/",
+    "icons": [
+      { "name": "WordPress", "image": "wordpress.png" },
+      { "name": "WooCommerce", "image": "woocommerce.png" },
+      { "name": "HTML5", "image": "html5.png" },
+      { "name": "CSS3", "image": "css3.png" },
+      { "name": "jQuery", "image": "jquery.png" },
+      { "name": "PHP", "image": "php.png" },
+      { "name": "PhpSpreadsheet", "image": "phpSpreadsheet.png" },
+      { "name": "cPanel", "image": "cPanel.png" }
+    ]
+  },
+  "links": {
+    "examples": [{
+      "label": "Ver online",
+      "url": "https://yomercobien.com"
+    }]
+  }
+}

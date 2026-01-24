@@ -1,0 +1,73 @@
+{
+  "seo": {
+    "metaDescription": "Optimización SEO on Page y mejoras de usabilidad para una página web de condominios, enfocadas en semántica HTML, contraste visual, URLs amigables y rendimiento."
+  },
+  "project": {
+    "title": "SEO on page",
+    "subtitle": ""
+  },
+  "gallery": {
+    "path": "/images/projects/seo-on-page/",
+    "images": [
+      {
+        "image": "seo-on-page-h1.jpg"
+      },
+      {
+        "image": "seo-on-page-h.jpg"
+      },
+      {
+        "image": "seo-on-page-meta.jpg"
+      },
+      {
+        "image": "seo-on-page-fondo.jpg"
+      },
+      {
+        "image": "seo-on-page-img.jpg"
+      },
+      {
+        "image": "seo-on-page-redirects.jpg"
+      }
+    ]
+  },
+  "company": {
+    "name": "La pecera creativa",
+    "logo": {
+      "image": "logoLaPeceraCreativa.png",
+      "path": "/images/companies/"
+    }
+  },
+  "problem": {
+    "description": "Una agencia de publicidad requiere mejoras de usabilidad y de SEO on Page en una página web de condominios. Algunos textos no son visibles por el bajo contraste con un fondo en video, las URLs no son amigables y las etiquetas HTML no se están utilizando con la semántica adecuada. La agencia entrega un conjunto de palabras clave, textos y notas con las mejoras esperadas."
+  },
+  "solution": {
+    "description": "Siguiendo el material entregado, se realizaron ajustes de usabilidad y SEO, como el uso adecuado de etiquetas H, redireccionamientos 301, incorporación de recuadros para mejorar el contraste de texto sobre el fondo, recorte y redimensión de imágenes, definición de titles y textos para meta descriptions, entre otras optimizaciones."
+  },
+  "achievements": [
+    "Se mejoró la lectura de textos y botones que tenían como fondo un video.",
+    "Se optimizaron las imágenes.",
+    "Se mejoró la semántica HTML.",
+    "Se transformaron las URLs para que fueran más amigables."
+  ],
+  "team": [
+    "Gestora de proyectos.",
+    "Community manager."
+  ],
+  "year": "2016",
+  "tools": {
+    "path": "/images/skills/technical/",
+    "icons": [
+      {
+        "name": "SEO on page",
+        "image": "seoonpage.png"
+      },
+      {
+        "name": "HTML5",
+        "image": "html5.png"
+      },
+      {
+        "name": "CSS3",
+        "image": "css3.png"
+      }
+    ]
+  }
+}

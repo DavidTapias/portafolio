@@ -1,0 +1,49 @@
+{
+  "path": "pagina-web-a-la-medida",
+  "seo": {
+    "metaDescription": "Desarrollo de página web a la medida para un locutor, con reproductores de audio y video personalizados, formulario de contacto y diseño adaptable a diferentes resoluciones."
+  },
+  "project": {
+    "title": "Página web a la medida",
+    "subtitle": ""
+  },
+  "company": {
+    "name": "La pecera creativa",
+    "logo": {
+      "path": "/images/companies/",
+      "image": "logoLaPeceraCreativa.png"
+    }
+  },
+  "problem": {
+    "description": "Una agencia de publicidad requiere el desarrollo de una página web para un locutor con el objetivo de mostrar su trabajo, ganar visibilidad en internet y captar clientes potenciales. La agencia entrega el diseño gráfico y material base. Entre los requerimientos se incluyen reproductores de audio y video a la medida, formulario de contacto y adaptación a diferentes resoluciones de pantalla."
+  },
+  "solution": {
+    "description": "Siguiendo el diseño propuesto y al tratarse de un sitio sin alta complejidad de back-end, se implementa la solución usando tecnologías puras del front-end, una librería de animaciones, integración de videos de YouTube y funcionalidades de la API de audio de HTML5. La información enviada desde el formulario de contacto se remite por correo electrónico."
+  },
+  "achievements": [
+    "Se le dio visibilidad en internet al trabajo del locutor con un diseño original.",
+    "Se mejoró la experiencia de usuario para los visitantes desde dispositivos móviles."
+  ],
+  "team": [
+    "Gestora de proyectos",
+    "Diseñador gráfico"
+  ],
+  "year": 2015,
+  "tools": {
+    "path": "/images/skills/technical/",
+    "icons": [
+      { "name": "HTML5", "image": "html5.png" },
+      { "name": "CSS3", "image": "css3.png" },
+      { "name": "JavaScript", "image": "javascript.png" },
+      { "name": "jQuery", "image": "jquery.png" },
+      { "name": "PHP", "image": "php.png" },
+      { "name": "cPanel", "image": "cPanel.png" }
+    ]
+  },
+  "links": {
+    "examples": [{
+      "label": "Ver online",
+      "url": "https://davidtapias.com/proyectos/pinilla/"
+    }]
+  }
+}

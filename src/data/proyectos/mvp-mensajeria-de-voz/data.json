@@ -1,0 +1,122 @@
+{
+  "seo": {
+    "metaDescription": "Desarrollo de un MVP de mensajería de voz grupal con grabación de audio, Text to Speech, carga de contactos y gestión de créditos mediante PayPal."
+  },
+  "project": {
+    "title": "MVP mensajería de voz",
+    "subtitle": ""
+  },
+  "gallery": {
+    "path": "/images/projects/mvp-mensajeria-de-voz/",
+    "images": [
+      {
+        "image": "mvp-mensajeria-de-voz.png"
+      },
+      {
+        "image": "mvp-mensajeria-de-voz-tts.png"
+      },
+      {
+        "image": "mvp-mensajeria-de-voz-difusiones-pendientes.png"
+      },
+      {
+        "image": "mvp-mensajeria-de-voz-historial-difusiones.png"
+      },
+      {
+        "image": "mvp-mensajeria-de-voz-creditos.png"
+      },
+      {
+        "image": "mvp-mensajeria-de-voz-creditos-csv-contactos.png"
+      },
+      {
+        "image": "mvp-mensajeria-de-voz--recuperacion-de-contrasenas.png"
+      }
+    ]
+  },
+  "company": {
+    "name": "Smart Automation Systems",
+    "logo": {
+      "image": "logoSmartAutomationSystems.png",
+      "path": "/images/companies/"
+    }
+  },
+  "problem": {
+    "description": "Se requiere una aplicación producto mínimo viable para mensajería de voz grupal, como versión Lite de las plataformas de mensajería de la empresa, enfocada al usuario común. Desde la aplicación se debe poder grabar audios, cargar archivos de audio o generar Text to Speech (TTS). Se deben agregar números telefónicos de forma manual o mediante archivos CSV, permitir el envío del mensaje a un máximo de 50 números telefónicos y realizar la carga de créditos mediante PayPal."
+  },
+  "solution": {
+    "description": "Al conocer previamente la librería Metronic, se decidió usarla en el front-end. Para dar mayor proyección futura (uso como aplicación móvil nativa o integración con plataformas existentes), se desarrolló una API basada en Lumen 8. Para el TTS se utilizó AWS Polly, la administración de archivos de audio se realizó con AWS S3 y se integró una librería JavaScript existente para la grabación de voz."
+  },
+  "achievements": [
+    "Se completó todo el ciclo de funcionamiento de la aplicación para ponerla a prueba en un entorno real."
+  ],
+  "team": [
+    "Gestor de proyectos.",
+    "Desarrolladores de software.",
+    "Diseñador gráfico."
+  ],
+  "year": "2023",
+  "tools": {
+    "path": "/images/skills/technical/",
+    "icons": [
+      {
+        "name": "Debian 10",
+        "image": "debian.png"
+      },
+      {
+        "name": "Linux",
+        "image": "linux.png"
+      },
+      {
+        "name": "Metronic",
+        "image": "metronic.png"
+      },
+      {
+        "name": "CSS3",
+        "image": "css3.png"
+      },
+      {
+        "name": "JavaScript",
+        "image": "javascript.png"
+      },
+      {
+        "name": "jQuery",
+        "image": "jquery.png"
+      },
+      {
+        "name": "PHP",
+        "image": "php.png"
+      },
+      {
+        "name": "Lumen 8",
+        "image": "lumen.png"
+      },
+      {
+        "name": "MySQL",
+        "image": "mysql.png"
+      },
+      {
+        "name": "AWS S3",
+        "image": "s3.png"
+      },
+      {
+        "name": "AWS Polly",
+        "image": "polly.png"
+      },
+      {
+        "name": "PayPal",
+        "image": "paypal.png"
+      },
+      {
+        "name": "Postman",
+        "image": "postman.png"
+      },
+      {
+        "name": "Swagger",
+        "image": "swagger.png"
+      },
+      {
+        "name": "GitLab",
+        "image": "gitlab.png"
+      }
+    ]
+  }
+}

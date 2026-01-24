@@ -1,0 +1,69 @@
+{
+  "slug": "automatizacion-web",  
+  "seo": {
+    "metaDescription": "Automatización del proceso de revisión de calidad web mediante Selenium, Lighthouse y scripts en Python para validar métricas, recursos y Core Web Vitals."
+  },
+  "project": {
+    "title": "Automatización web",
+    "subtitle": ""
+  },
+  "gallery": {
+    "path": "/images/projects/automatizacion-web/",
+    "images": [
+      {
+        "image": "automatizacion-web-metrics-pc.png"
+      },
+      {
+        "image": "automatizacion-web-seo-pc.png"
+      },
+      {
+        "image": "automatizacion-web-best-practices-pc.png"
+      },
+      {
+        "image": "automatizacion-web-accesibility.png"
+      }
+    ]
+  },
+  "company": {
+    "name": "EML",
+    "logo": {
+      "image": "logoEml.png",
+      "path": "/images/companies/"
+    }
+  },
+  "problem": {
+    "description": "En la empresa se generan múltiples landings y micrositios y en una búsqueda de mejorar la calidad de los mismos, el proceso de revisar las mejoras visuales y de código se hacen de forma manual, para optimizar el tiempo de estas revisiones, se requiere automatizar este proceso, tanto para páginas públicas como páginas privadas. Dentro de los temas a revisar están las Core Web Vitals, peticiones HTTP, atributos ARIA, entre otros.\nNOTA: Por temas de confidencialidad, las imágenes muestran un ejemplo de los resultados con lighthouse haciendo uso de una página personal, no se muestran resultados de otros scripts desarrollados."
+  },
+  "solution": {
+    "description": "Teniendo en cuenta que Selenium sirve para simular la navegación web con ChromeDriver, permite la captura de sesiones para manipular páginas post-login y su uso principal de automatización, se eligió como herramienta y se integró con Lighthouse para generar las métricas (Core Web Vitals). Como apoyo clave se usó la IA de ChatGPT para la creación de scripts en Python que validaran respuestas HTTP y que pudieran extraer URLs de páginas, imágenes, videos, iconos y recursos, con el fin de verificar su existencia y generar informes de Lighthouse de múltiples páginas en segundos. Los resultados se obtuvieron en archivos JSON y HTML, permitiendo la personalización de dashboards con los ítems relevantes de cada página."
+  },
+  "achievements": [
+    "El uso de ChatGPT como herramienta para generar funciones y scripts permitió reducir tiempos de desarrollo, descubrir nuevas librerías y alternativas para resolver el problema.",
+    "Se mejoró la escritura de prompts para ChatGPT, reduciendo el número de iteraciones y resultados verbosos."
+  ],
+  "team": [
+    "Desarrolladores de software."
+  ],
+  "year": "2025",
+  "tools": {
+    "path": "/images/skills/technical/",
+    "icons": [
+      {
+        "name": "ChatGPT",
+        "image": "chatGpt.png"
+      },
+      {
+        "name": "Python",
+        "image": "python.png"
+      },
+      {
+        "name": "Selenium",
+        "image": "selenium.png"
+      },
+      {
+        "name": "Lighthouse",
+        "image": "lighthouse.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "path": "pagina-web-con-wordpress",
+  "seo": {
+    "metaDescription": "Desarrollo de una página web personal en WordPress para compartir modelos de origami, instructivos, blog, eventos y experimentación técnica con creación de temas."
+  },
+  "project": {
+    "title": "Página web con WordPress",
+    "subtitle": ""
+  },
+  "company": {
+    "name": "Ninguna",
+    "logo": {
+      "path": "/images/companies/",
+      "image": "logoPersonales.png"
+    }
+  },
+  "problem": {
+    "description": "Uno de mis principales pasatiempos es el origami. Con el tiempo empecé a crear modelos originales y, aunque utilizo Instagram para compartir plegados propios y de otros autores, necesitaba un espacio donde pudiera segmentar mejor los contenidos y abordar temas que la plataforma no permite. Desde el punto de vista técnico, el proyecto también surge como una oportunidad para practicar y entender la construcción de temas para WordPress."
+  },
+  "solution": {
+    "description": "Se desarrolló una página web con estilo Materialize donde se muestran imágenes y descripciones de modelos de origami, secciones para descargar o visualizar instructivos en diferentes formatos, biografía, blog para artículos de experiencias y temas técnicos, sección de eventos y formulario de contacto. Se implementó un tema básico para WordPress, se configuró un subdominio y se administró el proyecto mediante cPanel y plugins."
+  },
+  "achievements": [
+    "Obtención de un cliente para un proyecto de publicidad con origami.",
+    "Divulgación de la creación de papel sándwich a través del blog, permitiendo que principiantes lograran fabricar su propio papel.",
+    "Entendimiento de los Custom Post Types y meta boxes.",
+    "Comprensión general del proceso de creación de temas para WordPress."
+  ],
+  "team": [
+    "Proyecto individual"
+  ],
+  "year": 2022,
+  "tools": {
+    "path": "/images/skills/technical/",
+    "icons": [
+      { "name": "WordPress", "image": "wordpress.png" },
+      { "name": "Materialize", "image": "materialize.png" },
+      { "name": "jQuery", "image": "jquery.png" },
+      { "name": "PHP", "image": "php.png" },
+      { "name": "cPanel", "image": "cPanel.png" }
+    ]
+  },
+  "links": {
+    "examples": [{
+      "label": "Ver online",
+      "url": "https://origami.davidtapias.com"
+    }]
+  }
+}

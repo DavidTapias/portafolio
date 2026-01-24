@@ -1,0 +1,183 @@
+---
+import Menu from "../../components/Menu.astro";
+import TitlePage from "../../components/TitlePage.astro";
+import Gallery from "../../components/Gallery.astro";
+import Button from "../../components/Button.astro";
+import CardProblem from "../../components/CardProblem.astro";
+import CardSolution from "../../components/CardSolution.astro";
+import CardAchievements from "../../components/CardAchievements.astro";
+import CardTools from "../../components/CardTools.astro";
+import CardTeam from "../../components/CardTeam.astro";
+import CardCompanyLogo from "../../components/CardCompanyLogo.astro";
+import CardYear from "../../components/CardYear.astro";
+import ButtonBack from "../../components/ButtonBack.astro";
+import GeneralHeader from "../../components/GeneralHeader.astro";
+
+export async function getStaticPaths() {
+  const projects = import.meta.glob(
+    '../../data/proyectos/**/data.json'
+  );
+
+  return Object.keys(projects).map((path) => ({
+    params: {
+      slug: path.split('/').slice(-2, -1)[0],
+    },
+  }));
+}
+
+// ===============================
+
+const { slug } = Astro.params;
+const projects = import.meta.glob(
+  '../../data/proyectos/**/data.json',
+  {
+    eager: true,
+    import: 'default',
+  }
+);
+
+const data =
+  projects[`../../data/proyectos/${slug}/data.json`];
+
+if (!data) {
+  return Astro.redirect('/404');
+}
+type ExternalLinkItem = {
+  label: string;
+  url: string;
+};
+type ExternalLinks = {
+  examples: ExternalLinkItem[];
+};
+
+
+type ProjectData = {
+  seo: {
+    metaDescription: string;
+  };
+  project: {
+    title: string;
+    subtitle: string;
+  };
+  gallery?: {
+    path: string;
+    images: { image: string }[];
+  };
+    links?: ExternalLinks;
+
+  company: {
+    name: string;
+    logo: {
+      image: string;
+      path: string;
+    };
+  };
+  problem: { description: string };
+  solution: { description: string };
+  achievements: string[];
+  team: string[];
+  year: string;
+  tools: {
+    path: string;
+    icons: { name: string; image: string }[];
+  };
+};
+
+
+const projectData = data as ProjectData;
+const {
+  seo,
+  project,
+  gallery,
+  links,
+  company,
+  problem,
+  solution,
+  achievements,
+  team,
+  year,
+  tools,
+} = projectData;
+
+
+const linksCount = links?.examples?.length ?? 0;
+
+const gridCols =
+  linksCount === 1
+    ? 'lg:grid-cols-1'
+    : linksCount === 2
+    ? 'lg:grid-cols-2'
+    : linksCount >= 3
+    ? 'lg:grid-cols-3'
+    : '';
+---
+
+
+<html lang="es" aria-role="proyecto">
+<head>
+	<GeneralHeader></GeneralHeader>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={seo.metaDescription} />
+    <title>David Tapias - Proyectos - {project.title}</title>
+</head>
+<Menu></Menu>
+<section class="bg-gradient-to-r from-c-dark-gray to-c-ligth-cyan pt-10 pb-20 lg:pb-10 lg:pt-20 px-4 ">
+    <div class="max-w-7xl mx-auto">
+
+        <TitlePage title={project.title} subtitle=""></TitlePage>
+        {gallery && (
+    <Gallery
+      class="z-2 relative"
+      path={gallery.path}
+      images={gallery.images}
+    />
+)}
+
+{linksCount > 0 && (
+  <div
+    class={`grid grid-cols-1 sm:grid-cols-1 gap-2 mt-2 ${gridCols}`}
+  >
+    {links.examples.map((link) => (
+      <Button
+        text={link.label}
+        ico="external"
+        target="external"
+        link={link.url}
+      />
+    ))}
+  </div>
+)}
+        <div class="grid grid-cols-1 gap-2 sm:grid-cols-1 lg:grid-cols-1 mt-2">
+
+        <div class="grid gap-2  sm:grid-cols-1  lg:grid-cols-[20%_auto]">
+            <CardCompanyLogo  logo={company.logo.path +company.logo.image} companyName={company.name} ></CardCompanyLogo>
+            <CardProblem description={problem.description}></CardProblem>
+        </div>
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-2  ">
+           
+            <CardSolution  description= {solution.description}></CardSolution>
+
+
+        <div class="grid grid-cols-1 gap-2  lg:grid-cols-1  lg:grid-rows-1">
+            <CardAchievements list={achievements} ></CardAchievements>
+
+            <div class="grid grid-cols-1  gap-2 lg:grid-cols-2  lg:grid-rows-1">
+                <CardTeam  team={team}></CardTeam>
+               <CardYear year={year}></CardYear>
+            </div>
+        </div>
+        
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-1">
+                <CardTools path={tools.path} tools={tools.icons}>
+
+                </CardTools>
+           </div>
+            </div>
+    </div>
+</section>
+
+<ButtonBack link="/proyectos/"></ButtonBack>
+</html>

@@ -1,0 +1,93 @@
+{
+  "seo": {
+    "metaDescription": "Panel de administración centralizado para la gestión de pagos, saldos y monitoreo de plataformas de SMS y voz, integrando múltiples APIs y servicios."
+  },
+  "project": {
+    "title": "Panel de administración",
+    "subtitle": ""
+  },
+  "gallery": {
+    "path": "/images/projects/panel-de-administracion/",
+    "images": [
+      {
+        "image": "panel-de-administracion-login.png"
+      },
+      {
+        "image": "panel-de-administracion.png"
+      },
+      {
+        "image": "panel-de-administracion-productos-clientes.png"
+      },
+      {
+        "image": "panel-de-administracion-proceso-ordenes-fallido.png"
+      },
+      {
+        "image": "panel-de-administracion-proceso-ordenes.png"
+      },
+      {
+        "image": "panel-de-administracion-pagos.png"
+      }
+    ]
+  },
+  "company": {
+    "name": "Smart Automation Systems",
+    "logo": {
+      "image": "logoSmartAutomationSystems.png",
+      "path": "/images/companies/"
+    }
+  },
+  "problem": {
+    "description": "La empresa ofrece más de cinco plataformas propias relacionadas con SMS y voz para campañas de callcenter, las cuales operan de forma independiente. Estas plataformas dependen de la disponibilidad de saldo y no existe un control centralizado para conocer cuánto dinero ha cargado un cliente ni el saldo disponible por cada plataforma. Dependiendo del ritmo de consumo de las campañas y para asegurar la alta disponibilidad, algunos clientes deben ser direccionados a servidores AWS de mayor capacidad, proceso que se realiza manualmente y genera conflictos de configuración."
+  },
+  "solution": {
+    "description": "Se desarrolló un panel de administración centralizado que integró todas las APIs de las plataformas. Mediante lógica de negocio se mejoró la administración de pagos y la gestión técnica de los servicios. Se configuraron cron jobs para el monitoreo del funcionamiento de las APIs y se implementó el seguimiento de órdenes de pago, desglosadas por producto y con puntos de control en cada transacción. Además, se solicitó a los equipos de desarrollo la creación de APIs específicas para exponer la información requerida."
+  },
+  "achievements": [
+    "Se mejoró el monitoreo del funcionamiento de las plataformas.",
+    "Se optimizó el tiempo de direccionamiento de clientes a réplicas de APIs.",
+    "Se redujo el tiempo necesario para conocer el saldo actual por cliente y producto."
+  ],
+  "team": [
+    "Gestor de proyectos",
+    "Desarrolladores de software",
+    "DevOps"
+  ],
+  "year": "2024",
+  "tools": {
+    "path": "/images/skills/technical/",
+    "icons": [
+      {
+        "name": "Debian 10",
+        "image": "debian.png"
+      },
+      {
+        "name": "Linux",
+        "image": "linux.png"
+      },
+      {
+        "name": "Metronic",
+        "image": "metronic.png"
+      },
+      {
+        "name": "jQuery",
+        "image": "jquery.png"
+      },
+      {
+        "name": "PHP",
+        "image": "php.png"
+      },
+      {
+        "name": "MySQL",
+        "image": "mysql.png"
+      },
+      {
+        "name": "API WooCommerce",
+        "image": "woocommerce.png"
+      },
+      {
+        "name": "API Square",
+        "image": "square.png"
+      }
+    ]
+  }
+}

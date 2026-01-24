@@ -1,9 +1,10 @@
 ---
 export interface props {
   images:Array<string>,
-  mobile:boolean
+  mobile:boolean,
+  path:string
 }
-const {images, mobile} = Astro.props;
+const {path,images, mobile} = Astro.props;
 ---
 
 <!-- Contenedor principal de Swiper -->
@@ -14,10 +15,10 @@ const {images, mobile} = Astro.props;
 
       {images.map((img) => (
       <div class="swiper-slide">
-          <img src={img} alt="" />
+          <img src={path+img.image} alt="" />
       </div>
          ))}
-      
+   
     </div>
     <!-- Botones de navegación -->
     <div class="swiper-button-prev absolute"></div>
